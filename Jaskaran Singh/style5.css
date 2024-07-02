@@ -1,0 +1,223 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f9f9f9;
+}
+
+header {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    background: #eee;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    width: 50%;
+    padding: 0 5%;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.create-memory {
+    background: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.create-memory h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.create-memory p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.create-memory .btn {
+    background: #fff;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.explore {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.explore h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.explore-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.explore-item {
+    width: 30%;
+    margin: 20px 0;
+}
+
+.explore-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.adventure {
+    background: #eee;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.adventure-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.adventure-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.testimonials {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.testimonials-carousel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonial {
+    width: 30%;
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.testimonial h4 {
+    font-size: 1em;
+}
+
+.newsletter {
+    background: #eee;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter form input,
+.newsletter form textarea,
+.newsletter form button {
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
