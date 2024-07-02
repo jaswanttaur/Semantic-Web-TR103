@@ -1,0 +1,140 @@
+    body{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Top Bar */
+    .topbar {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: right;
+    }
+
+    .topbar .contact-info p {
+        margin: 0;
+    }
+
+    /* Main Header */
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        background: #f4f4f4;
+    }
+
+    .main-header .logo img {
+        height: 50px;
+    }
+
+    .main-header .header-icons img {
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    /* Navbar */
+    .navbar {
+        background: #555;
+    }
+
+    .navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        margin: 0 15px;
+    }
+
+    .navbar ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+    }
+
+    .navbar ul li a:hover {
+        background: #666;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: url('../image/d.png') no-repeat center center/cover;
+        color: #fff;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        color: white;
+    }
+
+    /* Content Sections */
+    .content-section {
+        padding: 40px 0;
+    }
+
+    .content-section .section-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .content-section .section-content .image {
+        flex: 1;
+    }
+
+    .content-section .section-content .image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .content-section .section-content .text {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .content-section .section-content .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .content-section h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .content-section p {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+        .content-section .section-content {
+            flex-direction: column;
+        }
+
+        .content-section .section-content.reverse {
+            flex-direction: column;
+        }
+
+        .content-section .section-content .text {
+            padding: 20px 0;
+        }
+    }
