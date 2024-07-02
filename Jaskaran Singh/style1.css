@@ -1,0 +1,98 @@
+.container{
+    width: 1500px;
+    height:auto;
+    margin:0 auto;
+}
+.container .header{
+    width:1500;
+    height:200px;
+    background-color:#ff0000;
+}
+.container .contentrow{
+    width:1500px;
+    height:auto;
+}
+.container .contentrow .content1{
+    width: 370px;
+    height: 200;
+    background-color:#000;
+    float:left;
+}
+.container .contentrow .content2{
+    width: 370px;
+    height: 200;
+    background-color:#eee;
+    float:left;
+}
+.container .contentrow .content3{
+    width: 370px;
+    height: 200;
+    background-color:#e0e0e0;
+    float:left;
+}
+.container .contentrow .content4{
+    width: 390px;
+    height: 200px;
+    background-color:#7b1919;
+    float:left;
+}
+.container .contentrow .content5{
+    width: 370px;
+    height: 200px;
+    background-color:#1b32a3;
+    float:left;
+}
+.container .contentrow .content6{
+    width: 370px;
+    height: 200px;
+    background-color:#41a706;
+    float:left;
+}
+.container .contentrow .content7{
+    width: 760px;
+    height: 200px;
+    background-color:#087b6c;
+    float:left;
+}
+.container .contentrow .content8{
+    width: 740px;
+    height: 200px;
+    background-color:#610c5c;
+    float:left;
+}
+.container .contentrow .content9{
+    width: 370px;
+    height: 200px;
+    background-color:#ad3f17;
+    float:left;
+}
+.container .contentrow .content10{
+    width: 390px;
+    height: 200px;
+    background-color:#0d1db1;
+    float:left;
+}
+.container .contentrow .content11{
+    width: 370px;
+    height: 200px;
+    background-color:#000;
+    float:left;
+}
+.container .contentrow .content12{
+    width: 740px;
+    height: 200px;
+    background-color:#3fd51a;
+    float:left;
+}
+.container .contentrow .content13{
+    width: 390px;
+    height: 200px;
+    background-color:#ddc01c;
+    float:left;
+}
+.container .contentrow .content14{
+    width:1500;
+    height:200px;
+    background-color:#12bdc0;
+    float:left;
+}
