@@ -1,0 +1,281 @@
+.container{
+    /* background:none; */
+    /* background-color: black; */
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.header{
+    color:aliceblue;
+    height: 400PX;
+    margin-bottom: 0px;
+    background-image: linear-gradient(to bottom right,rgb(214, 217, 31),rgb(201, 225, 199));
+}
+
+.section2{
+    background-color: rgb(245, 246, 246);
+    display:flex ;
+    flex-direction:column;
+    /* margin-bottom: 100px; */
+    /* padding-bottom: 110px; */
+}
+.section2 h1{
+    flex:1;
+    text-align:center;
+    font-size:50px;
+    /* background: linear-gradient(black,grey); */
+    /* color:linear-gardient(black,grey) */
+   
+}
+.section2 p{
+    /* width: 800px; */
+    text-align: center;
+    display: inline-flex;
+    margin: auto;
+    width: 800px;
+    padding-bottom: 170px;
+}
+.ordernow_button button{
+    width: 190px;
+    height: 50px;
+    background-color: yellow;
+    color: black;
+    font-weight: 700;
+    font-size: larger;
+    display: block;
+    
+}
+.MAIN_DISHES{
+    display: inline-block;
+    justify-content: space-between;
+    z-index: 100;
+    top: -150px;
+    position: relative;
+    text-align: center;
+    
+
+}
+.MAIN_DISHES H4{
+    font-weight: 900;
+}
+.DISH1 P,.DISH2 P, .DISH3 P{
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+    padding: 0px 0PX 20PX 0;
+    color: gray;
+    
+}
+.MAIN_DISHES .DISH1{
+    width: 360PX;
+    /* background-color: #e74c3c; */
+    text-align: center;
+    float: left;
+    
+}
+.MAIN_DISHES .DISH2 {
+    float: LEFT;
+    text-align: center;
+
+    width: 350px;
+    /* background-color: aquamarine; */
+    height: 350px;
+
+}
+.DISH2 .pizza2{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.DISH2 .pizza2 img{
+    /* box-shadow:1px 10px   black ; */
+}
+.DISH3{ 
+    FLOAT:LEFT;
+    width:360px;
+     /* background-color: #e74c3c; */
+    
+ }
+.MAIN_DISHES BUTTON{
+    background-color: rgb(252, 231, 5);
+    width: 150PX;
+    height: 40PX;
+    margin: 0 auto;
+    font-weight: bolder;
+    border: NONE;
+}
+.yellow_line{
+    width: 1170px;
+    height:90px;
+    background-color: rgb(203, 203, 75) ;
+    opacity: 45%;
+    position: relative;
+    z-index: 10;
+
+}
+
+
+.section3{
+    /* background-color: aqua; */
+    text-align: center;
+    padding-top: 50PX;
+    height: 500px;
+}
+.section3 H3{
+    padding-bottom: 0PX;
+    margin: 0PX;
+}
+.section3 H1{
+    margin: 0;
+}
+.section3 P{
+    width: 800PX;
+    margin: 0 auto;
+    padding-bottom: 20PX;
+}
+
+.section3 .float_image {
+    display: inline-block;
+    margin:  0 auto;
+    z-index: 40;
+    position:relative;
+}
+.section3 .float_image_bg{
+    opacity: 40%;
+    position: relative;
+    top: -290px;
+    display: flex;
+    z-index: 10;
+    justify-content: space-between;
+}
+
+.section4{
+    height: 800px;
+}
+.section4 .Dinner_Plates{
+    height:420px;
+    /* display: inline-block; */
+    float:left;
+}
+.section4 .Dinner_Plates img{
+    width: 550px;
+    height: 100%;
+    margin: 0px 10px 0 10px;
+    float: left;
+
+}
+
+.section4 .image_div{
+    /* background-color: aquamarine; */
+    width: 400px;
+    float: left;
+}
+.section4 .image_div img{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 40%;
+    padding: 0 10px 20px 0;
+    /* float: left; */
+}
+TABLE{
+    display: flex;
+    align-items: c;
+    /* align-items: CENTER; */
+}
+/* .images{
+    margin: 20px 10px;
+    
+    background-color: wheat;
+    /* grid-template-columns:50px 50px; */
+    /* column-gap: 200px; */
+    
+/* } */
+/* .images div{
+    display: inline-block;
+} */ */
+.header p{
+    margin:0px 20px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+
+
+
+#Reservation{
+    margin-top: 150px;
+    background-color: white;
+    align-items: center;
+    display: flexbox;
+    /* align-items: center; */
+
+    justify-content: center;
+    
+}
+input{
+    width: 250px;
+    height: 40px;
+}
+
+.footer{
+   color: black;
+   background-image:url("images/floral-ornaments.jpg") ;
+    width:1170px;
+    background-position: center;
+    background-size: cover;
+    
+    height:200px;
+
+   /* background-image:url(\images\floral-ornaments.jpg) ; */
+}
+.footer div{
+    width:500px;
+}
+
+button{
+    border: none;
+    display: block;
+    background-color: yellow;
+    padding:8px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pizza{
+    background: none;
+    float:right;
+    margin-right: 30px;
+    /* align-items: center; */
+    
+}
+
+
+
+
+.rectangle {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.half {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+}
+
+.half1 {
+    background-color: #3498db; /* Color for the first half */
+    transform: rotate(45deg);
+    top: -100%;
+    left: -100%;
+}
+
+.half2 {
+    background-color: #e74c3c; /* Color for the second half */
+    transform: rotate(45deg);
+    top: 0%;
+    left: 0%;
+}

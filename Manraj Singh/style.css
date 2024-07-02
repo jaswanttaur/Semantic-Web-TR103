@@ -1,0 +1,91 @@
+button{
+    width: 200px;
+    height: 70px;
+    border-radius: 5px;
+    background-color:rgb(12, 221, 225);
+    box-shadow: 5px 4px 10px rgb(13, 14, 13);
+    color:rgb(14, 15, 15);
+    font-size: x-large;
+
+}
+
+body{
+    background-color: darkgray;
+    margin-left: 100px;
+    /* font-size: small; */
+}
+header{
+    margin-top: 70px;
+}
+h1{
+    background-color: coral;
+    font-size:60px;
+    width: 1170px;
+    height: 100px;
+    
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgb(81, 79, 83) ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+
+  
+    
+}
+
+.gridd button:hover{
+    color: azure;
+    background-color: rgb(238, 147, 90);
+    outline-offset: 10px;
+    cursor:pointer;
+    transform: translateY(2px);
+    /* transition: 50px 20px; */
+}
+.gridd{
+    padding: 50px 50px;
+    margin: 150px 150px;
+    background-color: rgb(80, 98, 231);
+    display:grid;
+    box-shadow: 10px 10px 10px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    /* grid-area: 100px; */
+    /* column-gap: 5px; */
+    row-gap: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
