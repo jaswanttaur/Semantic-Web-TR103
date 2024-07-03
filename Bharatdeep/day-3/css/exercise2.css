@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Playwrite NZ";
+  src: url("fonts/static/PlaywriteNZ-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playwrite NZ";
+  src: url("fonts/PlaywriteNZ-VariableFont_wgh.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #eae7e8;
+}
+
+header {
+  background: #fff;
+  padding: 1rem 5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li {
+  color: #333;
+  font-weight: bold;
+}
+
+button {
+  background: #ffffff;
+  color: #333333;
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+button:hover {
+  background: #333333;
+  color: #ffffff;
+}
+
+.hero {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container1,
+.container2 {
+  flex: 1;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #eae7e8;
+}
+
+.container2 img {
+  width: 380px;
+  height: 620px;
+  border-radius: 50%;
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container1 h1 {
+  font-family: "Playwrite NZ", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-top: 100px;
+  font-size: 5rem;
+}
+
+.container1 button {
+  margin-left: 400px;
+  margin-top: 50px;
+}
+
+.memory {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container3 {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.memory button {
+  margin-top: 50px;
+}
+
+.memory h2 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.places {
+  text-align: center;
+  padding: 2rem;
+}
+
+.places h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.places span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.places-grid {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.place {
+  text-align: center;
+}
+
+.place img {
+  width: 400px;
+  height: 500px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.places > img {
+  width: 100px;
+  height: 100px;
+}
+
+.contact {
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact h2 {
+  font-size: 3rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.container4 {
+  margin: 0 auto;
+  width: 40%;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer h2 {
+  font-size: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-content ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-content ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer p {
+  margin-top: 1rem;
+}

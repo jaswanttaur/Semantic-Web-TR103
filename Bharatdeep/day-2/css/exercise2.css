@@ -1,0 +1,109 @@
+.container {
+  width: 1170px;
+  height: auto;
+  margin: 0 auto;
+}
+
+header {
+  width: 1170px;
+  height: 200px;
+  background-color: red;
+}
+
+.container1 {
+  width: 292.5px;
+  height: 200px;
+  background-color: green;
+  float: left;
+}
+
+.container2 {
+  width: 292.5px;
+  height: 200px;
+  background-color: black;
+  float: left;
+}
+
+.container3 {
+  width: 292.5px;
+  height: 200px;
+  background-color: blue;
+  float: left;
+}
+
+.container4 {
+  width: 292.5px;
+  height: 200px;
+  background-color: lemonchiffon;
+  float: left;
+}
+
+.container5 {
+  width: 292.5px;
+  height: 200px;
+  background-color: yellow;
+  float: left;
+}
+
+.container6 {
+  width: 292.5px;
+  height: 200px;
+  background-color: purple;
+  float: left;
+}
+
+.container7 {
+  width: 585px;
+  height: 200px;
+  background-color: pink;
+  float: left;
+}
+
+.container8 {
+  width: 585px;
+  height: 200px;
+  background-color: lightblue;
+  float: left;
+}
+
+.container9 {
+  width: 292.5px;
+  height: 200px;
+  background-color: green;
+  float: left;
+}
+
+.container10 {
+  width: 292.5px;
+  height: 200px;
+  background-color: blue;
+  float: left;
+}
+
+.container11 {
+  width: 292.5px;
+  height: 200px;
+  background-color: purple;
+  float: left;
+}
+
+.container12 {
+  width: 585px;
+  height: 200px;
+  background-color: lemonchiffon;
+  float: left;
+}
+
+.container13 {
+  width: 292.5px;
+  height: 200px;
+  background-color: purple;
+  float: left;
+}
+
+.container14 {
+  width: 1170px;
+  height: 200px;
+  background-color: red;
+  float: left;
+}

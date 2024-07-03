@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/objectProperty1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">hasPurchased</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/NewClass"/>
+    <rdfs:range rdf:resource="http://visualdataweb.org/newOntology/purchase"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/reviewtext">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="IRI-based">reviewtext</rdfs:label>
+    <rdfs:label xml:lang="en">reviewtext</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/reviews"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/username">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="IRI-based">username</rdfs:label>
+    <rdfs:label xml:lang="en">username</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/NewClass"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/recommendsproduct">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="IRI-based">recommendsproduct</rdfs:label>
+    <rdfs:label xml:lang="en">recommendsproduct</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/recommendation"/>
+    <rdfs:range rdf:resource="http://visualdataweb.org/newOntology/product"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/NewClass">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="IRI-based">NewClass</rdfs:label>
+    <rdfs:label xml:lang="en">users</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/hasreviewed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="IRI-based">hasreviewed</rdfs:label>
+    <rdfs:label xml:lang="en">hasreviewed</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/product"/>
+    <rdfs:range rdf:resource="http://visualdataweb.org/newOntology/reviews"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/productprice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="IRI-based">productprice</rdfs:label>
+    <rdfs:label xml:lang="en">productprice</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/product"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/reviews">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="IRI-based">reviews</rdfs:label>
+    <rdfs:label xml:lang="en">reviews</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/reviewedby">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="IRI-based">reviewedby</rdfs:label>
+    <rdfs:label xml:lang="en">reviewedby</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/reviews"/>
+    <rdfs:range rdf:resource="http://visualdataweb.org/newOntology/NewClass"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/productname">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="IRI-based">productname</rdfs:label>
+    <rdfs:label xml:lang="en">productname</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/product"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/recommendation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="IRI-based">recommendation</rdfs:label>
+    <rdfs:label xml:lang="en">recommendation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/haspurchased">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">purchased</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/purchase"/>
+    <rdfs:range rdf:resource="http://visualdataweb.org/newOntology/product"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/userid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="IRI-based">userid</rdfs:label>
+    <rdfs:label xml:lang="en">userid</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/NewClass"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/hascategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="IRI-based">hascategory</rdfs:label>
+    <rdfs:label xml:lang="en">hascategory</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/product"/>
+    <rdfs:range rdf:resource="http://visualdataweb.org/newOntology/category"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/categoryname">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="IRI-based">categoryname</rdfs:label>
+    <rdfs:label xml:lang="en">categoryname</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/category"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/productid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="IRI-based">productid</rdfs:label>
+    <rdfs:label xml:lang="en">productid</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/product"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/reviewrating">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="IRI-based">reviewrating</rdfs:label>
+    <rdfs:label xml:lang="en">reviewrating</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/reviews"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/purchase">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="IRI-based">purchase</rdfs:label>
+    <rdfs:label xml:lang="en">purchase</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/purchaseprice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="IRI-based">purchaseprice</rdfs:label>
+    <rdfs:label xml:lang="en">purchaseprice</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/purchase"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/product">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="IRI-based">product</rdfs:label>
+    <rdfs:label xml:lang="en">product</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/recommendedfor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="IRI-based">recommendedfor</rdfs:label>
+    <rdfs:label xml:lang="en">recommendedfor</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/recommendation"/>
+    <rdfs:range rdf:resource="http://visualdataweb.org/newOntology/NewClass"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/purchasedate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="IRI-based">purchasedate</rdfs:label>
+    <rdfs:label xml:lang="en">purchasedate</rdfs:label>
+    <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/purchase"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dc:title xml:lang="en">New ontology</dc:title>
+    <dc:description xml:lang="en">New ontology description</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://visualdataweb.org/newOntology/category">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="IRI-based">category</rdfs:label>
+    <rdfs:label xml:lang="en">category</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
