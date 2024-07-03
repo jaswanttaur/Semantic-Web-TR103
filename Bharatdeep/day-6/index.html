@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RDF Turtle Code Snippet</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #fdfdfd;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      pre {
+        background-color: #333;
+        color: #fdfdfd;
+        padding: 15px;
+        border-radius: 5px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RDF Turtle Code Snippet</h1>
+    <pre>
+    <code>
+@prefix ab: &lt;http://learningsparql.com/ns/addressbook#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+
+ab:10432 
+    ab:firstName "Richard" ;
+    ab:lastName "Mutt" ;
+    ab:spouse ab:19771 .
+
+ab:18301 
+    ab:firstName "Craig" ;
+    ab:lastName "Ellis" ;
+    ab:patient ab:19771 .
+
+ab:19771 
+    ab:firstName "Cindy" ;
+    ab:lastName "Marshall" .
+
+ab:spouse 
+    rdf:type owl:SymmetricProperty ;
+    rdfs:comment "Identifies someone's spouse" .
+
+ab:patient 
+    rdf:type rdf:Property ;
+    rdfs:comment "Identifies a doctor's patient" .
+
+ab:doctor 
+    rdf:type rdf:Property ;
+    rdfs:comment "Identifies a doctor treating the named resource" ;
+    owl:inverseOf ab:patient .
+    </code>
+  </pre>
+  </body>
+</html>

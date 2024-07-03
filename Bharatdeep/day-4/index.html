@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>notes</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Include Mermaid.js -->
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</head>
+<body>
+<h1 id="how-to-represent-facts-part-1-">How to represent facts (part 1):-</h1>
+<h2 id="rdf-resource-description-framework-">RDF (Resource Description Framework):-</h2>
+<h3 id="resource-">Resource:-</h3>
+<blockquote>
+  <ol type="1">
+    <li>can be everything (in principle)</li>
+    <li>must be uniquely identified and be refrenceable simply via an IRI</li>
+  </ol>
+</blockquote>
+<h3 id="description-">Description:-</h3>
+<blockquote>
+  <ol type="1">
+    <li>Description of resources via representing properties and relationship among resources</li>
+    <li>Relationships can be represented as graphs</li>
+  </ol>
+</blockquote>
+<h3 id="framework-">Framework:-</h3>
+<blockquote>
+  <ol type="1">
+    <li>Combination of web based protocols (URI, IRI, HTTP, XML)</li>
+    <li>Based on formal models (semantics)</li>
+    <li>Defines all allowed relationships among resources</li>
+  </ol>
+</blockquote>
+<p><br></p>
+<h3 id="rdf-triple-">RDF triple:-</h3>
+<blockquote>
+  <p>Triples (also known as facts) are a way to express graph data.</p>
+  <p>RDF Triple consists of following three parts:-</p>
+  <blockquote>
+    <ol type="1">
+      <li>Subject:- The resource being described.(IRI)</li>
+      <li>Predicate:- The property or attribute of the subject.(IRI)</li>
+      <li>Object:- The value or resource that is linked to the subject by the predicate.(IRI or Literal)</li>
+    </ol>
+  </blockquote>
+</blockquote>
+<pre class="mermaid">graph LR
+A[Subject] -->|Predicate| B[Object]</pre>
+<h3 id="example-">Example:-</h3>
+<blockquote>
+  <p>(&lt;uri://people#MikeSmith12&gt;)—(<a href="http://xmlns.com/foaf/0.1/knows" class="uri">http://xmlns.com/foaf/0.1/knows</a>)—&gt;(&lt;uri://people#JohnDoe45&gt;)</p>
+</blockquote>
+<pre class="mermaid">graph LR
+A[MikeSmith12] -->|Knows| B[JohnDoe45]</pre>
+<h3 id="literals-">Literals:-</h3>
+<blockquote>
+  <ol type="1">
+    <li>Typed literals can be expressed via XML schema data-type</li>
+    <li>Namespace for typed literals:- <a href="http://www.w3.org/2001/XMLSchema" class="uri">http://www.w3.org/2001/XMLSchema</a></li>
+  </ol>
+  <blockquote>
+    <p>Example:- “Semantics”^^&lt;<a href="http://www.w3.org/2001/XMLSchema#string" class="uri">http://www.w3.org/2001/XMLSchema#string</a>
+</body>
+</html>
+
