@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://example.org/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+>
+
+<owl:Ontology rdf:about="http://example.org/myOntology"/>
+  <rdf:Description rdf:about="http://example.org/4">
+    <ns1:name>s</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</ns1:age>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/6">
+    <ns1:name>j</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</ns1:age>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/7">
+    <ns1:name>k</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns1:age>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/1">
+    <ns1:name>a</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ns1:age>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/8">
+    <ns1:name>l</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ns1:age>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/9">
+    <ns1:name>h</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ns1:age>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/5">
+    <ns1:name>f</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ns1:age>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/3">
+    <ns1:name>f</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ns1:age>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/10">
+    <ns1:name>m</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ns1:age>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/2">
+    <ns1:name>d</ns1:name>
+    <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ns1:age>
+  </rdf:Description>
+</rdf:RDF>
