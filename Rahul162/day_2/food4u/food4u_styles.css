@@ -1,0 +1,178 @@
+.container{
+    /* background:none; */
+    /* background-color: black; */
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.header{
+    color:aliceblue;
+    height: 400PX;
+    margin-bottom: 0px;
+    background-image: linear-gradient(to bottom right,rgb(214, 217, 31),rgb(201, 225, 199));
+}
+
+.section2{
+    background-color: rgb(228, 239, 239);
+    display:flex ;
+    flex-direction:column;
+}
+.section2 h1{
+    flex:1;
+    text-align:center;
+    font-size:50px;
+    background: linear-gradient(black,grey);
+    /* color:linear-gardient(black,grey) */
+    /* display: flex; */
+    /* margin: auto; */
+}
+.ordernow_button button{
+    width: 190px;
+    height: 50px;
+    background-color: yellow;
+    color: black;
+    font-weight: 700;
+    font-size: larger;
+    display: block;
+    
+}
+.MAIN_DISHES{
+    display: inline-block;
+    justify-content: space-between;
+
+}
+.MAIN_DISHES .DISH1{
+    width: 360PX;
+    
+
+    float: left;
+    
+}
+.MAIN_DISHES .DISH2 {
+    float: LEFT;
+    width: 350px;
+    
+
+}
+.DISH3{ 
+    FLOAT:LEFT;
+    width:360px;
+    
+ }
+.MAIN_DISHES BUTTON{
+    background-color: yellow;
+    width: 100PX;
+    height: 25PX;
+    border: NONE;
+}
+.yellow_line{
+    width: 1170px;
+    height:25px;
+    background-color: yellow ;
+    opacity: 45%;
+}
+
+
+TABLE{
+    display: flex;
+    align-items: c;
+    /* align-items: CENTER; */
+}
+/* .images{
+    margin: 20px 10px;
+    
+    background-color: wheat;
+    /* grid-template-columns:50px 50px; */
+    /* column-gap: 200px; */
+    
+/* } */
+/* .images div{
+    display: inline-block;
+} */ */
+.header p{
+    margin:0px 20px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+
+
+
+#Reservation{
+    margin-top: 150px;
+    background-color: white;
+    align-items: center;
+    display: flexbox;
+    /* align-items: center; */
+
+    justify-content: center;
+    
+}
+input{
+    width: 250px;
+    height: 40px;
+}
+
+.footer{
+   color: black;
+   background-image:url("images/floral-ornaments.jpg") ;
+    width:1170px;
+    background-position: center;
+    background-size: cover;
+    
+    height:200px;
+
+   /* background-image:url(\images\floral-ornaments.jpg) ; */
+}
+.footer div{
+    width:500px;
+}
+
+button{
+    border: none;
+    display: block;
+    background-color: yellow;
+    padding:8px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pizza{
+    background: none;
+    float:right;
+    margin-right: 30px;
+    /* align-items: center; */
+    
+}
+
+
+
+
+.rectangle {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.half {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+}
+
+.half1 {
+    background-color: #3498db; /* Color for the first half */
+    transform: rotate(45deg);
+    top: -100%;
+    left: -100%;
+}
+
+.half2 {
+    background-color: #e74c3c; /* Color for the second half */
+    transform: rotate(45deg);
+    top: 0%;
+    left: 0%;
+}
