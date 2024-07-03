@@ -1,0 +1,18 @@
+.container{
+    width: 1170px;
+    height:auto;
+    background-color: antiquewhite;
+}
+.container .header{
+    width: 1170px;
+    height: 100px;
+    background-color: chocolate;
+}
+.container .row1{
+    height: 80px;
+}
+.container .content1{
+    width:
+    float:left;
+
+}
