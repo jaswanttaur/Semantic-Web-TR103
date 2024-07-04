@@ -1,0 +1,746 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+  body{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+  }
+  
+  /* styling homepage */
+  #home{
+          height:100vh;
+          background-image:linear-gradient(110deg ,yellow 65%, rgb(179, 232, 161) 35%);
+          display: flex;
+      flex-direction: column;
+  }
+  #home .header{
+      display: flex;
+      height: 80px;
+      width: 100%;
+      padding: 0 40px;
+      margin:20px 0;
+      justify-content: space-between;
+  }
+  #home .header .brand{
+      display: flex;
+      height: 100%;
+      width: 40%;
+      align-items: center;
+      justify-content: left;
+  }
+  #home .header .brand .logo{
+      display: flex;
+      height: 70%;
+      width: 80px;
+  }
+  #home .header .brand .logo img{
+      display: flex;
+      width: auto;
+      height: 100%;
+      align-items: center;
+      justify-content: left;
+  }
+  #home .header .option{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  align-items: flex-end;
+  justify-content: space-between;
+  }
+  #home .header .option .contact{
+      display: flex;
+      width: 200px;
+      height: 50%;
+  }
+  #home.header .option .contact .info{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 100%;
+  }
+  #home .header .option .contact .info span{
+      display: flex;
+      font-size: 10px;
+      font-weight: bold;
+      padding:0 10px;
+      align-items: flex-end;
+      justify-content: right;
+  }
+  #home .header .option .contact .info h3{
+      display: flex;
+      font-size: 17px;
+      padding:0 10px;
+      align-items:flex-end;
+      justify-content:right;
+  }
+  #home .header .option .contact .phone{
+      display: flex;
+      width: 20%;
+      height: 100%;
+  }
+  #home .header .option .contact .phone ion-icon{
+      display: flex;
+      font-size:28px;
+  }
+  #home .header .option .navbar{
+      display: flex;
+      height: 100%; 
+      width: 100%;
+  }
+  #home .header .option .navbar ion-icon{
+      display: none;
+  }
+  #home .header .option .navbar ul {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+  }
+  #home .header .option .navbar ul li{
+      display: flex;
+      height: 100%;
+      width: auto;
+      align-items: center;
+      justify-content: center;
+  }
+  #home .header .option .navbar ul li a{
+      display: flex;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      color: #191919;
+      font-size: 16px;
+  }
+  #home .header .option .navbar ul li:hover{
+      font-size: 18px;
+      font-weight:bold;
+  }
+  
+  /*styleing details in homepage */
+  #home .home_quote{
+      display: flex;
+      height: auto;
+      width: 100%;
+      padding: 40px 0;
+  }
+  #home .home_quote .detail{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+  }
+  #home .home_quote .detail h2{
+      display: flex;
+      margin: 8px 0;
+      font-size: 50px;
+      width: 100%;
+     align-items: center;
+     justify-content:center;
+     font-family: 'Delicious Handrawn', cursive;
+  }
+  #home .home_quote .detail h1{
+      display: flex;
+      margin: 8px 0;
+      font-size:75px;
+      letter-spacing: 2px;
+      width: 100%;
+     align-items: center;
+     justify-content:center;
+     font-family: 'Cabin Sketch', cursive;
+     font-weight: 600;
+  }
+  #home .home_quote .detail h5{
+      display: flex;
+      margin: 8px 0;
+      font-size: 20px;
+      letter-spacing: 2.5px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Roboto', sans-serif;
+  
+  }
+  #home .home_quote .detail .line{
+      display: flex;
+      height: 1px;
+      width: 300px;
+      margin: 8px 0;
+      background: #9999;
+  }
+  #home .home_quote .detail .offer-box{
+      display: flex;
+      width: 200px;
+      height: 40px;
+      align-items: center;
+      justify-content: space-around;
+  }
+  #home .home_quote .detail .offer-box .lpart{
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      width: auto;
+      align-items: center;
+      justify-content: center;
+  }
+  #home .home_quote .detail .offer-box .lpart span{
+      display: flex;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Cabin Sketch', cursive;
+  }
+  #home .home_quote .detail .offer-box .rpart{
+      display: flex;
+      font-size: 32px;
+      height: 100px;
+      width: auto;
+      font-family: 'Cabin Sketch', cursive;
+       align-items: center;
+       justify-content: center;
+  }
+  #home .home_quote .detail a{
+      display: flex;
+      height: 40px;
+      width: 150px;
+      margin-top:10px ;
+      margin-bottom:20px ;
+      color:#191919;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration:none;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #191919;
+      transition: .5s;
+  }
+  #home .home_quote .detail a:hover{
+      background: #000;
+      color: aqua;
+  }
+  #home .home_quote .plate{
+      display: flex;
+      height: auto;
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+  }
+  #home .home_quote .plate img{
+      display: flex;
+      height: 100%;
+      width: 55%;
+      transition: 1s;
+  }
+  #home .home_quote .plate img:hover{
+      transform: scale(1.1);
+  }
+  
+  /* styling menu page */
+  #menu{
+      height:100vh;
+          background-image:linear-gradient(180deg, white 40%,rgb(179, 232, 161) 40%,rgb(179, 232, 161) 60%,white 60%, white 100%);
+          display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 100px;
+      justify-content: center;
+      position: relative;
+  }
+  #menu h1{
+      display: flex;
+      margin-top: 1px;
+      color: grey;
+      font-size: 60px;
+      letter-spacing:2px;
+      font-family: 'Cabin Sketch', cursive;
+  }
+  #menu p{
+      display: flex;
+      font-size: 12px;
+      line-height: 23px;
+      align-items: center;
+      justify-content:center;
+      font-family: 'Roboto', sans-serif;
+  }
+  #menu #item{
+      display: flex;
+      height: auto;
+      width: 100%;
+      margin-top: 10px; 
+  }
+  #two:checked~ #menu #item .card{
+      margin-left: -100%;
+  }
+  #menu #item .card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 33%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #menu #item .card img{
+      display: flex;
+      height: 250px;
+      width: 100;
+      margin: 10px 0;
+      border-radius: 50%;
+      background: transparent;
+      transition: 1s;
+  }
+  #menu #item .card img:hover{
+      transform: scale(1.1);
+  }
+  #menu #item .card h6{
+      display: flex;
+      width: 100%;
+      height: auto;
+      font-size:14px;
+      font-family: 'Roboto', sans-serif;
+      margin:5px 0;
+      font-weight: bold;
+      align-items: center;
+      justify-content: center;
+  }
+  #menu #item .card div{
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 10px;
+      font-family: 'Roboto', sans-serif;
+      width: 30%;
+      height: auto;
+      padding: 0 0;
+      margin: 10px 0;
+      color:#524d4d99;
+      align-items: center;
+      justify-content: center;
+  }
+  #menu #item .card a{
+      display:flex;
+      height: 40px;
+      width: 150px;
+      color: #191919;
+      font-size: 16px;
+      margin:5px 0;
+      font-weight: bold;
+      text-decoration: none;
+      background:#fff600;
+      align-items: center;
+      justify-content: center;
+      border-redius:7px;
+      transition: .5s;
+  }
+  #menu #item .card a:hover{
+      background: #000;
+      color: aqua;
+  }
+  .button{
+      display: flex;
+      margin: 20px;
+  }
+  .button label{
+      height: 15px;
+      width:15px;
+      background: grey;
+      margin: 0 4px;
+      border-radius: 50%;
+      transition: all 0.5s ease;
+  }
+  .button label.active{
+      background: yellow;
+  }
+  #one:checked~.button label.one{
+      background: yellow;
+  }
+  #one:checked~.button label.two{
+      background: gray;
+  }
+  #two:checked~.button label.two{
+      background: yellow;
+  }
+  #two:checked~.button label.one{
+      background: gray;
+  }
+  input[type="radio"]{
+      display:none;
+  }
+   
+   /* styling on our-story */
+   #our-story{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      padding: 40px;
+      align-items: center;
+      justify-content: center;
+   }
+   #our-story h5{
+      display: flex;
+      width: 100%;
+      height: auto;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      align-items: center;
+      justify-content: center;
+   }
+   #our-story h1{
+      display: flex;
+      width: 100%;
+      height: auto;;
+      font-size: 40px;
+      margin: 10px 0;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cabin Sketch', cursive;
+   }
+   #our-story p{
+      display: flex;
+      width: 46%;
+      height: auto;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      line-height: 23px;
+      align-items: center;
+      justify-content: center;
+   }
+  
+  /* style for swiper */
+  .swiper {
+      display: flex;
+      width: 80%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+    .mySwiper2 {
+      height: 80%;
+      width: 100%;
+    }
+    .mySwiper {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 5px;
+    }
+    .mySwiper .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+    .mySwiper .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 33%;
+      height: 100%;
+      object-fit: cover;
+      float: inline-start;
+     
+    }
+  
+   /* stling on banner */
+   #banner{
+      display: flex;
+      height: auto;
+      width: 100%;
+      padding: 40px 80px;
+      align-items: center;
+      justify-content: center;
+   }
+   #banner.banner1{
+  display: flex;
+   height: 90%;
+   width: 50%;
+   align-items: center;
+   justify-content: center;
+   }
+   #banner .banner1 img{
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: 1s;
+   }
+   #banner .banner1 img:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+   }
+   #banner .banner2{
+      display: flex;
+      flex-direction: column;
+      height: 90%;
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+   } 
+   #banner .banner2 .banner2-1{
+      display: flex;
+      height: 50%;
+      width: 100%;
+      margin-bottom: 2%;
+      align-items: flex-start;
+      justify-content: center;
+   }
+   #banner .banner2 .banner2-2{
+      display: flex;
+      height: 50%;
+      width: 100%;
+      margin-bottom: 2%;
+      align-items: flex-end;
+      justify-content: center;
+   }
+   #banner .banner2 .banner2-1 img,
+   #banner .banner2 .banner2-2 img{
+      display: flex;
+      height: 90%;
+      width: 90%;
+      transition: 1s;
+   }
+    #banner .banner2 .banner2-2 img:hover,
+   #banner .banner2 .banner2-1 img:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+   } 
+  
+   /* styling contact us  */
+    #contact_us{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      padding: 40px 80px;
+      background: #fff;
+      align-items: center;
+      justify-content: flex-start;
+  }
+  #contact_us h5{
+      display: flex;
+      font-size: 18px;
+      margin: 10px 0px;
+      font-family: 'Roboto', sans-serif;
+  }
+  #contact_us h1{
+      display: flex;
+      width: 100%;
+      height: auto;
+      font-size: 40px;
+      margin: 10px 0px;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cabin Sketch', cursive;
+  }
+  #contact_us form{
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+      width: 80%;
+      margin: 20px 0px;
+      align-items: center;
+      justify-content: space-around;
+  }
+  #contact_us form input{
+      display: flex;
+      font-family: 'Roboto', sans-serif;
+      height: 48px;
+      width: 40%;
+      margin: 10px 0px;
+      padding-left:20px;
+      border: 1px solid #191919;
+      border-radius: 7px;
+      cursor: pointer;
+      text-transform: uppercase;
+  }
+  #contact_us form a{
+      display: flex;
+      height: 48px;
+      width: 40%;
+      font-size: 17px;
+      border-radius: 7px;
+      margin: 10px 0px;
+      color:#262626;
+      letter-spacing: 2px;
+      font-weight: bold;
+      background: #FFDC00;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      transition: 0.5s;
+  }  
+  #contact_us form a:hover{
+      color: aqua;
+      background-color: #191919;
+  }
+  
+  /* styling footer */
+  footer{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/footer.png);
+      /* background-image:url(images/footer.jpg); */
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      justify-content: space-around;
+      
+  }
+  footer .container1{
+      display: flex;
+      width: 100%;
+      height: 250px;
+  }
+  footer .container1 .brand_details{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 50%;
+  }
+  footer .container1 .brand_details .brand{
+      display: flex;
+      height: 120px;
+      align-items: center;
+      justify-content: left;
+  }
+  
+  footer .container1 .brand_details .brand .logo{
+      display: flex;
+      height: 50%;
+      width: 90%;
+  }
+  footer .container1 .brand_details .brand .logo img{
+      display: flex;
+      height:100%;
+      width: 100%;
+  }
+  footer .container1 .brand_details .brand .brand_name{
+      display: flex;
+      height:80%;
+      width: auto;
+      align-items: center;
+      justify-content: left;
+  }
+  footer .container1 .brand_details .brand .brand_name h1{
+      display: flex;
+      font-size: 30px;
+      color: #FFDC00;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 2px;
+      margin-left: 20%;
+      font-family: 'Times New Roman', Times, serif;
+  }
+  footer .container1 .brand_details p{
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 12px;
+      width: 50%;
+      color: #fff;
+      line-height: 20px; 
+      margin-left: 5%;
+  }
+  footer .container1 .address{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+  }
+  footer .container1 .address .location,
+  footer .container1 .address .mail{
+      display: flex;
+      height: 50px;
+      width: 300px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 5px 0;
+      align-items: center;
+      justify-content: left;
+      cursor: pointer
+  }
+  footer .container1 .address .location ion-icon,
+  footer .container1 .address .mail ion-icon{
+      display: flex;
+      font-size: 25px;
+      color: gold;
+      margin-right:20px;
+  }
+  
+  footer .container2{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: space-around;
+  }
+  footer .container2 .copyright{
+      display: flex;
+      height: 100%;
+      width: auto;
+      margin-right: 50%;
+      margin-bottom: 4%;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+  }
+  footer .container2 .social{
+      display: flex;
+      width: 300px;
+      height: 100%;
+      /* margin-right: -10%; */
+  }
+  footer .container2 .social ul{
+      display: flex;
+      height: 50%;
+      width: 50%;
+      align-items:center;
+      justify-content: space-around;
+  }
+  footer .container2 .social ul li{
+      display: flex;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #fff;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+      transition: .5s;
+      
+  }
+  footer .container2 .social ul li:hover{
+      transform: scale(1.1);
+      background-color: aqua;
+      cursor: pointer;
+  }
