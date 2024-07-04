@@ -1,0 +1,442 @@
+.container{
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container .nav{
+    width: 650px;
+    height: 100px;
+    background-color: #fff;
+    color: black;
+    padding: 2px 0; /* Increased padding to increase height */
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -20px;
+    margin-right: px;
+}
+
+.container .nav ul {
+    list-style: none;
+  
+}
+
+.container .nav ul li{
+    text-decoration: none;
+    float: left;
+    margin-right: 1px;
+    margin-top: 15px;
+}
+
+.container .nav ul li a{
+    text-decoration: none;
+    color: #000000;
+   
+    margin-right: 23px;
+}
+
+.container .nav button{
+    margin-left: 55px;
+    margin-top: 5px;
+    margin-right: 10px;
+   
+    background-color: #fdfdfd;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 15px;
+   
+}
+   
+}
+
+.container .row1{
+    width: 550px;
+    height: 300px;
+}
+
+.container .row1 .content1{
+    width: 275px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 20px;
+   
+    
+
+}
+.container .row1 .content1 button{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+  
+    margin-left: px;
+    padding:7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container .row1 .content2{
+    width: 275px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+}
+
+.container .row1 .content2 img{
+    width: 250px;
+    height: 167px;
+    margin: 60px px;
+    margin-top: 150px;
+    
+   
+
+}
+
+.container .row2 {
+    width: 560px;
+    height: 238px;
+    align-items: center;
+    background-color: rgb(11, 11, 11);
+    float: left;
+    margin-top: 10px;
+}
+
+.container .row2 .content3{
+    text-align: center;
+    margin-left: 70px;
+    background-color: rgb(11, 11, 11);
+    float: left;
+    margin-top: 10px;
+    color: white;
+   
+}
+
+.container .row2 .content3 button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+  
+    margin-left: 15px;
+    padding:7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container .row3{
+    width: 560px;
+    height: 300px;
+}
+
+
+.container .row3 .content4 img{
+    width: 130px;
+    height: 100px;
+    margin: 10px 25px;
+    margin-top:50px;
+    float: left;
+}
+
+
+.container .row3 .content5 img{
+    width: 130px;
+    height: 100px;
+    float: left;
+    margin-left:  30px;
+
+    margin-top:50px;
+
+}
+
+
+.container .row3 .content6 img{
+    width: 120px;
+    height: 100px;
+    margin: 10px 50px;
+    margin-top:50px;
+    float: left;
+}
+.container .row4 .content7{
+    width: 120px;
+    height: 80px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 25px;
+    font-size: 8.9px;
+    text-align: justify;
+}
+
+.container .row4 .content8{
+    width: 120px;
+    height: 100px;
+    margin-top: 0px;
+    float: left;
+    font-size: 8.9px;
+    text-align: justify;
+    margin-left: 70px;
+}
+.container .row4 .content9{
+    width: 120px;
+    height: 100px;
+    float: left;
+    font-size: 8.9px;
+    text-align: justify;
+    margin-left: 60px;
+}
+
+.container .row5{
+    width: 560px;
+    height: 300px;
+}
+.container .row5 .content10 img{
+    width: 130px;
+    height: 100px;
+   margin-left: 170px;
+    margin-top:50px;
+    float: left;
+
+}
+.container .row6{
+    width: 560px;
+    height: 400px;
+}
+
+.container .row6 .content11 {
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    color: black;
+    margin-top:465px ;
+    margin-left: 80px;
+    font-size: 30px;
+    
+}
+
+.container .row7{
+    width: 560px;
+    height: 100px;
+    
+}
+
+.container .row7 .content12 img{
+    width: 200px;
+    height: 300px;
+    margin: 10px 50px;
+    margin-top:-150px;
+    float: left;
+
+}
+.container .row7 .content13 img {
+    width: 180px;
+    height: 150px;
+    margin: 6px;
+    margin-top:-150px;
+    float: left;
+}
+.container .row .content13{
+    margin-top: 5px;
+    height: 20px;
+    width: 180px;
+}
+
+.container .row8{
+    width: 550px;
+    height: 400px;
+    margin-top: 150px;
+    background-color: #000000;
+}
+.container .row8 .content14{
+    width: 275px;
+    height: 300px;
+  
+    float: left;
+    background-color: #000000;
+}
+.container .row8 .content14 img{
+    width: 250px;
+    height: 300px;
+    margin: 0px 40px;
+    margin-top: 50px;
+    
+}
+
+.container .row8 .content15{
+    width: 205px;
+    height: 200px;
+    color: #f9f9f9;
+    float: left;
+    margin-top: -230px;
+    text-align: left;
+    margin-left: 330px;
+    background-color: #000000;
+}
+
+.container .row9{
+    width: 560px;
+    height: 400px;
+ 
+}
+
+.container .row9 .content16 {
+    width: 275px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 150px;
+    text-align: left;
+    margin-left: 20px;
+    
+}
+
+.container .row9 .content17 img{
+    width: 200px;
+    height: 390px;
+    margin: 0px 330px;
+    margin-top: -270px;
+}
+
+.container .row10 {
+    width: 560px;
+    height: 400px;
+}
+
+.container .row10 .content18{
+    margin-top: 550px;
+    height: 20px;
+    width: 180px;
+    margin-left: 190px;
+}
+
+.container .row10 .content19 img{
+    width: 130px;
+    height: 100px;
+    margin: 10px 20px;
+    margin-top:80px;
+    float: left;
+}
+
+.container .row10 .content20 img{
+    width: 130px;
+    height: 100px;
+    margin: 10px 15px;
+    margin-top:80px;
+    float: left;
+}
+
+.container .row10 .content21 img{
+    width: 130px;
+    height: 100px;
+    margin: 10px 25px;
+    margin-top:80px;
+    float: left;
+}
+
+.container .row11 {
+    width: 560px;
+    height: 400px;
+}
+.container .row11 .content22{
+    width: 120px;
+    height: 80px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 30px;
+    font-size: 8.9px;
+    
+}
+
+.container .row11 .content23{
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    float: left;
+    font-size: 8.9px;
+    margin-left: 55px;
+}
+.container .row11 .content24{
+    width: 120px;
+    height: 100px;
+    float: left;
+    font-size: 8.9px;
+    margin-top: -100px;
+    margin-left: 380px;
+}
+
+.container .row12{
+    width: 560px;
+    height: 400px;
+ 
+}
+
+.container .row12 .content25 {
+    width: 275px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 20px;
+    
+}
+.container .row12 .content25 button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(252, 252, 252);
+    margin-left: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+}
+
+.container .row12 .content26 img{
+    width: 200px;
+    height: 350px;
+    margin-left: 310px;
+    margin-top: -380px;
+}
+
+.footer{
+    width: 520px;
+    height: 280px;
+    background-color: grey;
+    margin-left: 250px;
+    
+}
+.footer .section1{
+    width: 520px;
+    height: 150px;
+    margin-top: 500px;
+    margin-left: 20px;
+}
+
+.footer .section2{
+    width: 520px;
+    height: 150px;
+    margin-top: -150px;
+    margin-left: 110px;
+}
+.footer .section3{
+    width: 520px;
+    height: 150px;
+    margin-top: -170px;
+    margin-left: 245px;
+}
+.footer .section4{
+    width: 520px;
+    height: 150px;
+    margin-top: -170px;
+    margin-left: 375px;
+}
+.footer .section5{
+    width: 520px;
+    height: 150px;
+    margin-top: 60px;
+    margin-left: 80px;
+}

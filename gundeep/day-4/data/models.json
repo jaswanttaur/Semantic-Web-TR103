@@ -1,0 +1,19 @@
+{
+    "models": [
+        {
+            "name": "Model S",
+            "image": "images/model-s.png",
+            "description": "Experience luxury and performance with the Model S."
+        },
+        {
+            "name": "Model E",
+            "image": "images/model-e.png",
+            "description": "The perfect blend of elegance and efficiency."
+        },
+        {
+            "name": "Model G",
+            "image": "images/model-g.png",
+            "description": "Unleash the power with the rugged Model G."
+        }
+    ]
+}

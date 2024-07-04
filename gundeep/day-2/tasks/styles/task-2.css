@@ -1,0 +1,135 @@
+.container{
+    width: 1170px;
+    height:auto;
+    margin:0 auto;
+}
+
+.container .header{
+    width: 1170px;
+    height: 150px;
+    background-color: #ff9d00;
+}
+
+.container .row1{
+    width: 1170px;
+    height: 100px;
+}
+
+.container .row1 .content1{
+    width: 292.5px;
+    height: 150px;
+    background-color: #1100ff;
+    float: left;
+}
+
+.container .row1 .content2{
+    width: 292.5px;
+    height: 150px;
+    background-color: #0099ff;
+    float: left;
+}
+
+.container .row1 .content3{
+    width: 292.5px;
+    height: 150px;
+    background-color: #ff00d9;
+    float: left;
+}
+
+.container .row1 .content4{
+    width: 292.5px;
+    height: 150px;
+    background-color: #00ff4c;
+    float: left;
+}
+
+
+.container .row2{
+    width: 1170px;
+    height: 100px;
+}
+
+.container .row2 .content5{
+    width: 292.5px;
+    height: 150px;
+    background-color: #a6ff00;
+    float: left;
+}
+
+.container .row2 .content6{
+    width: 292.5px;
+    height: 150px;
+    background-color: #1e557ae6;
+    float: left;
+}
+
+.container .row2 .content7{
+    width: 585px;
+    height: 150px;
+    background-color: #ff4400;
+    float: left;
+}
+
+.container .row3{
+    width: 1170px;
+    height: 100px;
+}
+
+.container .row3 .content8{
+    width: 585px;
+    height: 150px;
+    background-color: #9b478f;
+    float: left;
+}
+
+.container .row3 .content9{
+    width: 292.5px;
+    height: 150px;
+    background-color: #0048ffe6;
+    float: left;
+}
+
+.container .row3 .content10{
+    width: 292.5px;
+    height: 150px;
+    background-color: #dbeb9a;
+    float: left;
+}
+
+.container .row4{
+    width: 1170px;
+    height: 100px;
+}
+
+.container .row4 .content11{
+    width: 292.5px;
+    height: 150px;
+    background-color: #992929;
+    float: left;
+}
+
+.container .row4 .content12{
+    width: 585px;
+    height: 150px;
+    background-color: #d7cddee6;
+    float: left;
+}
+
+.container .row4 .content13{
+    width: 292.5px;
+    height: 150px;
+    background-color: #ff440088;
+    float: left;
+}
+
+.container .row5{
+    width: 1170px;
+    height: 100px;
+}
+
+.container .row5 .content14{
+    width: 1170px;
+    height: 150px;
+    background-color: #6b5dd4;
+    float: left;
+}
