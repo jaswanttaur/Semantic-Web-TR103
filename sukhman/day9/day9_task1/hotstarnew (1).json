@@ -1,0 +1,1090 @@
+{
+  "_comment": "Ontology for Hotstar Website Architecture [Generated for WebVOWL Editor] [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "en"
+    ],
+    "baseIris": [
+      "http://example.org/"
+    ],
+    "iri": "http://example.org/hotstarOntology/",
+    "title": {
+      "en": "Hotstar Ontology"
+    },
+    "description": {
+      "en": "Ontology for the system architecture of the Hotstar website."
+    }
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.36",
+      "translation": [
+        276.08,
+        238.28
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "ClientApplication",
+      "type": "owl:Class"
+    },
+    {
+      "id": "BackendService",
+      "type": "owl:Class"
+    },
+    {
+      "id": "CDN",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Database",
+      "type": "owl:Class"
+    },
+    {
+      "id": "MonitoringAndLogging",
+      "type": "owl:Class"
+    },
+    {
+      "id": "UserDatabase",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ContentDatabase",
+      "type": "owl:Class"
+    },
+    {
+      "id": "AnalyticsDatabase",
+      "type": "owl:Class"
+    },
+    {
+      "id": "AuthenticationService",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ContentManagementService",
+      "type": "owl:Class"
+    },
+    {
+      "id": "RecommendationEngine",
+      "type": "owl:Class"
+    },
+    {
+      "id": "PlaybackService",
+      "type": "owl:Class"
+    },
+    {
+      "id": "MobileApp",
+      "type": "owl:Class"
+    },
+    {
+      "id": "WebApp",
+      "type": "owl:Class"
+    },
+    {
+      "id": "SmartTVApp",
+      "type": "owl:Class"
+    },
+    {
+      "id": "User",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Content",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Subscription",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Device",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Genre",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ContentProvider",
+      "type": "owl:Class"
+    },
+    {
+      "id": "StreamingService",
+      "type": "owl:Class"
+    },
+    {
+      "id": "NodeId23",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId24",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId25",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId26",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId28",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId29",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId30",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId31",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId32",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId34",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId35",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "Class36",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "ClientApplication",
+      "iri": "http://example.org/ClientApplication",
+      "baseIri": "http://example.org/",
+      "label": "Client Application",
+      "pos": [
+        -160.02,
+        482.31
+      ]
+    },
+    {
+      "id": "BackendService",
+      "iri": "http://example.org/BackendService",
+      "baseIri": "http://example.org/",
+      "label": "Backend Service",
+      "pos": [
+        -88.34,
+        99.09
+      ]
+    },
+    {
+      "id": "CDN",
+      "iri": "http://example.org/CDN",
+      "baseIri": "http://example.org/",
+      "label": "Content Delivery Network (CDN)",
+      "pos": [
+        -69.14,
+        823.18
+      ]
+    },
+    {
+      "id": "Database",
+      "iri": "http://example.org/Database",
+      "baseIri": "http://example.org/",
+      "label": "Database",
+      "pos": [
+        -412.12,
+        232.08
+      ]
+    },
+    {
+      "id": "MonitoringAndLogging",
+      "iri": "http://example.org/MonitoringAndLogging",
+      "baseIri": "http://example.org/",
+      "label": "Monitoring and Logging",
+      "pos": [
+        -415.31,
+        -62.58
+      ]
+    },
+    {
+      "id": "UserDatabase",
+      "iri": "http://example.org/UserDatabase",
+      "baseIri": "http://example.org/",
+      "label": "User Database",
+      "pos": [
+        603.89,
+        1189.28
+      ]
+    },
+    {
+      "id": "ContentDatabase",
+      "iri": "http://example.org/ContentDatabase",
+      "baseIri": "http://example.org/",
+      "label": "Content Database",
+      "pos": [
+        1091.7,
+        1313.21
+      ]
+    },
+    {
+      "id": "AnalyticsDatabase",
+      "iri": "http://example.org/AnalyticsDatabase",
+      "baseIri": "http://example.org/",
+      "label": "Analytics Database",
+      "pos": [
+        481.99,
+        1467.04
+      ]
+    },
+    {
+      "id": "AuthenticationService",
+      "iri": "http://example.org/AuthenticationService",
+      "baseIri": "http://example.org/",
+      "label": "Authentication Service",
+      "pos": [
+        -61.92,
+        -293.66
+      ]
+    },
+    {
+      "id": "ContentManagementService",
+      "iri": "http://example.org/ContentManagementService",
+      "baseIri": "http://example.org/",
+      "label": "Content Management Service",
+      "pos": [
+        252.19,
+        1120.36
+      ]
+    },
+    {
+      "id": "RecommendationEngine",
+      "iri": "http://example.org/RecommendationEngine",
+      "baseIri": "http://example.org/",
+      "label": "Recommendation Engine",
+      "pos": [
+        810.28,
+        1403.72
+      ]
+    },
+    {
+      "id": "PlaybackService",
+      "iri": "http://example.org/PlaybackService",
+      "baseIri": "http://example.org/",
+      "label": "Playback Service",
+      "pos": [
+        -445.13,
+        691.32
+      ]
+    },
+    {
+      "id": "MobileApp",
+      "iri": "http://example.org/MobileApp",
+      "baseIri": "http://example.org/",
+      "label": "Mobile App",
+      "pos": [
+        -89.23,
+        1254.48
+      ]
+    },
+    {
+      "id": "WebApp",
+      "iri": "http://example.org/WebApp",
+      "baseIri": "http://example.org/",
+      "label": "Web App",
+      "pos": [
+        -371.31,
+        1102.72
+      ]
+    },
+    {
+      "id": "SmartTVApp",
+      "iri": "http://example.org/SmartTVApp",
+      "baseIri": "http://example.org/",
+      "label": "Smart TV App",
+      "pos": [
+        176.99,
+        1404.44
+      ]
+    },
+    {
+      "id": "User",
+      "iri": "http://example.org/User",
+      "baseIri": "http://example.org/",
+      "label": "User",
+      "pos": [
+        707.36,
+        49.11
+      ]
+    },
+    {
+      "id": "Content",
+      "iri": "http://example.org/Content",
+      "baseIri": "http://example.org/",
+      "label": "Content",
+      "pos": [
+        1071.58,
+        245.98
+      ]
+    },
+    {
+      "id": "Subscription",
+      "iri": "http://example.org/Subscription",
+      "baseIri": "http://example.org/",
+      "label": "Subscription",
+      "pos": [
+        587.68,
+        421.17
+      ]
+    },
+    {
+      "id": "Device",
+      "iri": "http://example.org/Device",
+      "baseIri": "http://example.org/",
+      "label": "Device",
+      "pos": [
+        708.61,
+        -355.23
+      ]
+    },
+    {
+      "id": "Genre",
+      "iri": "http://example.org/Genre",
+      "baseIri": "http://example.org/",
+      "label": "Genre",
+      "pos": [
+        1206.83,
+        626.32
+      ]
+    },
+    {
+      "id": "ContentProvider",
+      "iri": "http://example.org/ContentProvider",
+      "baseIri": "http://example.org/",
+      "label": "Content Provider",
+      "pos": [
+        1364.33,
+        21.66
+      ]
+    },
+    {
+      "id": "StreamingService",
+      "iri": "http://example.org/StreamingService",
+      "baseIri": "http://example.org/",
+      "label": "Streaming Service",
+      "pos": [
+        922.46,
+        565.28
+      ]
+    },
+    {
+      "id": "NodeId23",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        945.17,
+        -409.4
+      ]
+    },
+    {
+      "id": "NodeId24",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        800.75,
+        -602.39
+      ]
+    },
+    {
+      "id": "NodeId25",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        559.12,
+        -556.01
+      ]
+    },
+    {
+      "id": "NodeId26",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1525.94,
+        -151.55
+      ]
+    },
+    {
+      "id": "NodeId28",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1438.64,
+        556.8
+      ]
+    },
+    {
+      "id": "NodeId29",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1152.46,
+        876.86
+      ]
+    },
+    {
+      "id": "NodeId30",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1397.02,
+        797.74
+      ]
+    },
+    {
+      "id": "NodeId31",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        389.19,
+        565.69
+      ]
+    },
+    {
+      "id": "NodeId32",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        589.26,
+        678.73
+      ]
+    },
+    {
+      "id": "NodeId34",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -219.28,
+        -482.93
+      ]
+    },
+    {
+      "id": "NodeId35",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        52.04,
+        -517.85
+      ]
+    },
+    {
+      "id": "Class36",
+      "iri": "http://example.org/hotstarOntology/hotstar",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "hotstar",
+      "pos": [
+        308.52,
+        53.42
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "usesService",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "storesDataIn",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "monitors",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "queries",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "servesContentTo",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "streamsContentTo",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "providesService",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "hasSubscription",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "watchesOn",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "streams",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "offersContent",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "partOf",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "availableOn",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "datatypeProperty14",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty15",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty16",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty17",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty18",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty19",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty20",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty21",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty22",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty23",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty24",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "objectProperty25",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty26",
+      "type": "owl:ObjectProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "usesService",
+      "iri": "http://example.org/usesService",
+      "baseIri": "http://example.org/",
+      "label": "uses service",
+      "attributes": [
+        "object"
+      ],
+      "domain": "ClientApplication",
+      "range": "BackendService",
+      "pos": [
+        -124.18,
+        290.7
+      ]
+    },
+    {
+      "id": "storesDataIn",
+      "iri": "http://example.org/storesDataIn",
+      "baseIri": "http://example.org/",
+      "label": "stores data in",
+      "attributes": [
+        "object"
+      ],
+      "domain": "BackendService",
+      "range": "Database",
+      "pos": [
+        -268.79,
+        128.37
+      ]
+    },
+    {
+      "id": "monitors",
+      "iri": "http://example.org/monitors",
+      "baseIri": "http://example.org/",
+      "label": "monitors",
+      "attributes": [
+        "object"
+      ],
+      "domain": "MonitoringAndLogging",
+      "range": "BackendService",
+      "pos": [
+        -251.83,
+        18.26
+      ]
+    },
+    {
+      "id": "queries",
+      "iri": "http://example.org/queries",
+      "baseIri": "http://example.org/",
+      "label": "queries",
+      "attributes": [
+        "object"
+      ],
+      "domain": "BackendService",
+      "range": "Database",
+      "pos": [
+        -232.45,
+        213.99
+      ]
+    },
+    {
+      "id": "servesContentTo",
+      "iri": "http://example.org/servesContentTo",
+      "baseIri": "http://example.org/",
+      "label": "serves content to",
+      "attributes": [
+        "object"
+      ],
+      "domain": "CDN",
+      "range": "ClientApplication",
+      "pos": [
+        -114.58,
+        652.75
+      ]
+    },
+    {
+      "id": "streamsContentTo",
+      "iri": "http://example.org/streamsContentTo",
+      "baseIri": "http://example.org/",
+      "label": "streams content to",
+      "attributes": [
+        "object"
+      ],
+      "domain": "PlaybackService",
+      "range": "ClientApplication",
+      "pos": [
+        -302.58,
+        586.82
+      ]
+    },
+    {
+      "id": "providesService",
+      "iri": "http://example.org/providesService",
+      "baseIri": "http://example.org/",
+      "label": "provides service",
+      "attributes": [
+        "object"
+      ],
+      "domain": "AuthenticationService",
+      "range": "BackendService",
+      "pos": [
+        -75.13,
+        -97.29
+      ]
+    },
+    {
+      "id": "hasSubscription",
+      "iri": "http://example.org/hasSubscription",
+      "baseIri": "http://example.org/",
+      "label": "hasSubscription",
+      "attributes": [
+        "object"
+      ],
+      "domain": "User",
+      "range": "Subscription",
+      "pos": [
+        647.52,
+        235.14
+      ]
+    },
+    {
+      "id": "watchesOn",
+      "iri": "http://example.org/watchesOn",
+      "baseIri": "http://example.org/",
+      "label": "watchesOn",
+      "attributes": [
+        "object"
+      ],
+      "domain": "User",
+      "range": "Device",
+      "pos": [
+        707.98,
+        -153.06
+      ]
+    },
+    {
+      "id": "streams",
+      "iri": "http://example.org/streams",
+      "baseIri": "http://example.org/",
+      "label": "streams",
+      "attributes": [
+        "object"
+      ],
+      "domain": "User",
+      "range": "Content",
+      "pos": [
+        889.47,
+        147.55
+      ]
+    },
+    {
+      "id": "offersContent",
+      "iri": "http://example.org/offersContent",
+      "baseIri": "http://example.org/",
+      "label": "offersContent",
+      "attributes": [
+        "object"
+      ],
+      "domain": "ContentProvider",
+      "range": "Content",
+      "pos": [
+        1217.96,
+        133.82
+      ]
+    },
+    {
+      "id": "partOf",
+      "iri": "http://example.org/partOf",
+      "baseIri": "http://example.org/",
+      "label": "partOf",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Content",
+      "range": "Genre",
+      "pos": [
+        1139.21,
+        436.15
+      ]
+    },
+    {
+      "id": "availableOn",
+      "iri": "http://example.org/availableOn",
+      "baseIri": "http://example.org/",
+      "label": "availableOn",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Content",
+      "range": "StreamingService",
+      "pos": [
+        997.02,
+        405.63
+      ]
+    },
+    {
+      "id": "datatypeProperty14",
+      "iri": "http://example.org/hotstarOntology/moblie",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "moblie",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "Device",
+      "range": "NodeId23",
+      "pos": [
+        838.01,
+        -384.86
+      ]
+    },
+    {
+      "id": "datatypeProperty15",
+      "iri": "http://example.org/hotstarOntology/tablet",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "tablet",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "Device",
+      "range": "NodeId24",
+      "pos": [
+        761.55,
+        -497.24
+      ]
+    },
+    {
+      "id": "datatypeProperty16",
+      "iri": "http://example.org/hotstarOntology/pc",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "pc",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "Device",
+      "range": "NodeId25",
+      "pos": [
+        622.66,
+        -470.67
+      ]
+    },
+    {
+      "id": "datatypeProperty17",
+      "iri": "http://example.org/hotstarOntology/name",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "name",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "ContentProvider",
+      "range": "NodeId26",
+      "pos": [
+        1457.52,
+        -78.23
+      ]
+    },
+    {
+      "id": "datatypeProperty18",
+      "iri": "http://example.org/hotstarOntology/comdey",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "comdey",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "Genre",
+      "range": "NodeId28",
+      "pos": [
+        1333.43,
+        588.35
+      ]
+    },
+    {
+      "id": "datatypeProperty19",
+      "iri": "http://example.org/hotstarOntology/action",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "action",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "Genre",
+      "range": "NodeId29",
+      "pos": [
+        1175.43,
+        771.03
+      ]
+    },
+    {
+      "id": "datatypeProperty20",
+      "iri": "http://example.org/hotstarOntology/drama",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "drama",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "Genre",
+      "range": "NodeId30",
+      "pos": [
+        1314.95,
+        723.77
+      ]
+    },
+    {
+      "id": "datatypeProperty21",
+      "iri": "http://example.org/hotstarOntology/monthly",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "monthly",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "Subscription",
+      "range": "NodeId31",
+      "pos": [
+        475.09,
+        503.15
+      ]
+    },
+    {
+      "id": "datatypeProperty22",
+      "iri": "http://example.org/hotstarOntology/yearly",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "yearly",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "Subscription",
+      "range": "NodeId32",
+      "pos": [
+        588.59,
+        569.95
+      ]
+    },
+    {
+      "id": "datatypeProperty23",
+      "iri": "http://example.org/hotstarOntology/opts_",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "opts ",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "AuthenticationService",
+      "range": "NodeId34",
+      "pos": [
+        -152.43,
+        -402.52
+      ]
+    },
+    {
+      "id": "datatypeProperty24",
+      "iri": "http://example.org/hotstarOntology/email",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "email",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "AuthenticationService",
+      "range": "NodeId35",
+      "pos": [
+        3.85,
+        -423.04
+      ]
+    },
+    {
+      "id": "objectProperty25",
+      "iri": "http://example.org/hotstarOntology/backend",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "backend",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class36",
+      "range": "BackendService",
+      "pos": [
+        110.09,
+        76.25
+      ]
+    },
+    {
+      "id": "objectProperty26",
+      "iri": "http://example.org/hotstarOntology/user",
+      "baseIri": "http://example.org/hotstarOntology/",
+      "label": "user",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class36",
+      "range": "User",
+      "pos": [
+        507.94,
+        51.27
+      ]
+    }
+  ]
+}

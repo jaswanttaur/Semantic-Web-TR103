@@ -1,0 +1,153 @@
+@prefix : <http://example.org/hotstarOntology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ClientApplication a owl:Class .
+:BackendService a owl:Class .
+:CDN a owl:Class .
+:Database a owl:Class .
+:MonitoringAndLogging a owl:Class .
+:UserDatabase a owl:Class .
+:ContentDatabase a owl:Class .
+:AnalyticsDatabase a owl:Class .
+:AuthenticationService a owl:Class .
+:ContentManagementService a owl:Class .
+:RecommendationEngine a owl:Class .
+:PlaybackService a owl:Class .
+:MobileApp a owl:Class .
+:WebApp a owl:Class .
+:SmartTVApp a owl:Class .
+:User a owl:Class .
+:Content a owl:Class .
+:Subscription a owl:Class .
+:Device a owl:Class .
+:Genre a owl:Class .
+:ContentProvider a owl:Class .
+:StreamingService a owl:Class .
+:NodeId23 a rdfs:Literal .
+:NodeId24 a rdfs:Literal .
+:NodeId25 a rdfs:Literal .
+:NodeId26 a rdfs:Literal .
+:NodeId28 a rdfs:Literal .
+:NodeId29 a rdfs:Literal .
+:NodeId30 a rdfs:Literal .
+:NodeId31 a rdfs:Literal .
+:NodeId32 a rdfs:Literal .
+:NodeId34 a rdfs:Literal .
+:NodeId35 a rdfs:Literal .
+:Class36 a owl:Class .
+
+:ClientApplication rdfs:label "Client Application"@en .
+:BackendService rdfs:label "Backend Service"@en .
+:CDN rdfs:label "Content Delivery Network (CDN)"@en .
+:Database rdfs:label "Database"@en .
+:MonitoringAndLogging rdfs:label "Monitoring and Logging"@en .
+:UserDatabase rdfs:label "User Database"@en .
+:ContentDatabase rdfs:label "Content Database"@en .
+:AnalyticsDatabase rdfs:label "Analytics Database"@en .
+:AuthenticationService rdfs:label "Authentication Service"@en .
+:ContentManagementService rdfs:label "Content Management Service"@en .
+:RecommendationEngine rdfs:label "Recommendation Engine"@en .
+:PlaybackService rdfs:label "Playback Service"@en .
+:MobileApp rdfs:label "Mobile App"@en .
+:WebApp rdfs:label "Web App"@en .
+:SmartTVApp rdfs:label "Smart TV App"@en .
+:User rdfs:label "User"@en .
+:Content rdfs:label "Content"@en .
+:Subscription rdfs:label "Subscription"@en .
+:Device rdfs:label "Device"@en .
+:Genre rdfs:label "Genre"@en .
+:ContentProvider rdfs:label "Content Provider"@en .
+:StreamingService rdfs:label "Streaming Service"@en .
+:NodeId23 rdfs:label "Literal"@en .
+:NodeId24 rdfs:label "Literal"@en .
+:NodeId25 rdfs:label "Literal"@en .
+:NodeId26 rdfs:label "Literal"@en .
+:NodeId28 rdfs:label "Literal"@en .
+:NodeId29 rdfs:label "Literal"@en .
+:NodeId30 rdfs:label "Literal"@en .
+:NodeId31 rdfs:label "Literal"@en .
+:NodeId32 rdfs:label "Literal"@en .
+:NodeId34 rdfs:label "Literal"@en .
+:NodeId35 rdfs:label "Literal"@en .
+:Class36 rdfs:label "hotstar"@en .
+
+:usesService a owl:ObjectProperty ;
+    rdfs:domain :ClientApplication ;
+    rdfs:range :BackendService ;
+    rdfs:label "uses service"@en .
+
+:storesDataIn a owl:ObjectProperty ;
+    rdfs:domain :BackendService ;
+    rdfs:range :Database ;
+    rdfs:label "stores data in"@en .
+
+:monitors a owl:ObjectProperty ;
+    rdfs:domain :MonitoringAndLogging ;
+    rdfs:range :BackendService ;
+    rdfs:label "monitors"@en .
+
+:queries a owl:ObjectProperty ;
+    rdfs:domain :BackendService ;
+    rdfs:range :Database ;
+    rdfs:label "queries"@en .
+
+:servesContentTo a owl:ObjectProperty ;
+    rdfs:domain :CDN ;
+    rdfs:range :ClientApplication ;
+    rdfs:label "serves content to"@en .
+
+:streamsContentTo a owl:ObjectProperty ;
+    rdfs:domain :PlaybackService ;
+    rdfs:range :ClientApplication ;
+    rdfs:label "streams content to"@en .
+
+:providesService a owl:ObjectProperty ;
+    rdfs:domain :AuthenticationService ;
+    rdfs:range :BackendService ;
+    rdfs:label "provides service"@en .
+
+:hasSubscription a owl:ObjectProperty ;
+    rdfs:domain :User ;
+    rdfs:range :Subscription ;
+    rdfs:label "hasSubscription"@en .
+
+:watchesOn a owl:ObjectProperty ;
+    rdfs:domain :User ;
+    rdfs:range :Device ;
+    rdfs:label "watchesOn"@en .
+
+:streams a owl:ObjectProperty ;
+    rdfs:domain :User ;
+    rdfs:range :Content ;
+    rdfs:label "streams"@en .
+
+:offersContent a owl:ObjectProperty ;
+    rdfs:domain :ContentProvider ;
+    rdfs:range :Content ;
+    rdfs:label "offers content"@en .
+
+:partOf a owl:ObjectProperty ;
+    rdfs:domain :Content ;
+    rdfs:range :Genre ;
+    rdfs:label "partOf"@en .
+
+:availableOn a owl:ObjectProperty ;
+    rdfs:domain :Content ;
+    rdfs:range :StreamingService ;
+    rdfs:label "availableOn"@en .
+
+:datatypeProperty14 a owl:DatatypeProperty .
+:datatypeProperty15 a owl:DatatypeProperty .
+:datatypeProperty16 a owl:DatatypeProperty .
+:datatypeProperty17 a owl:DatatypeProperty .
+:datatypeProperty18 a owl:DatatypeProperty .
+:datatypeProperty19 a owl:DatatypeProperty .
+:datatypeProperty20 a owl:DatatypeProperty .
+:datatypeProperty21 a owl:DatatypeProperty .
+:datatypeProperty22 a owl:DatatypeProperty .
+:datatypeProperty23 a owl:DatatypeProperty .
+:datatypeProperty24 a owl:DatatypeProperty .
+:objectProperty25 a owl:ObjectProperty .
+:objectProperty26 a owl:ObjectProperty .
