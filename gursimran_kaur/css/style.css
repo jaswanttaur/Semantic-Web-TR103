@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom,#fe4365,#fc9d9a);
+}
+header {
+    background: linear-gradient(to bottom, #fc9d9a,#fe4365 );
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+    font-size: 24px;
+    color: floralwhite;
+}
+
+header p, header h2 {
+    margin: 5px 0;
+    font-size: 16px;
+    color:#f9f7f7;
+}
+
+nav {
+    background-color: #de3163;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav button {
+    background-color: #fff6d2;
+    border: none;
+    color: rgb(252, 247, 247);
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+nav button:hover {
+    background-color: #ffc0cb;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    margin: 20px auto;
+}
+
+.gallery h3 {
+    font-size: 20px;
+    color:azure;
+}
+
+.gallery-image {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.caption {
+    font-size: 14px;
+    color: #120101;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+    color: #555;
+}
