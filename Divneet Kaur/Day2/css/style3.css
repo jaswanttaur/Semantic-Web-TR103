@@ -1,0 +1,256 @@
+.container {
+	width: 1170px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.container .row1{
+	width: 1170px;
+	height: 600px;
+	background-color: yellow;
+
+}
+
+.font11{
+	text-shadow: black;
+	font-family: fantasy;
+	padding-top: 10px;
+	font-size: 10 em;
+	font-weight: ;
+	text-align: left;
+	padding-left: 70px;
+	font-size: larger;
+}
+
+.container .row1 .content10{
+	width: 870px;
+	height: 600px;
+	background-color: yellow;
+	float: left;
+}
+
+.container .row1 .content10 .head4{
+	width: 870px;
+	height: 100px;
+	background-color: yellow;
+	float: left;
+}
+
+.container .row1 .content10 .head5{
+	width: 870px;
+	height: 500px;
+	background-color: yellow;
+	background-image: url(../image/colour2.jpg);
+	float: left;
+}
+
+.container .row1 .content11{
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/f.png);
+		float: left;
+}
+
+
+.content {
+            text-align: center;
+            padding-top: 100px;
+        }
+.content h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 600;
+            margin: 0 0 20px 0;
+ }
+.content p {
+            font-size: 18px;
+            margin: 0 0 40px 0;
+        }
+ .read-more {
+            padding: 10px 30px;
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+            background-color: yellow;
+            border: 2px solid black;
+          
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+ .read-more:hover {
+            background-color: transparent;
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+ .read-more2 {
+            padding: 10px 30px;
+            font-size: 40px;
+            font-weight: 500;
+            color: white;
+            background-color: black;
+            border: 2px solid white;
+          
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+ .read-more2:hover {
+            background-color: transparent;
+            color: purple;
+            border-color: purple;
+        }
+
+nav {
+      display: flex;
+      gap: 20px;
+}
+nav a {
+       font-size: 16px;
+       text-decoration: none;
+       color: black;
+       transition: color 0.3s;
+}
+nav a:hover {
+       color: whitesmoke;
+}
+
+
+.container .row2{
+	width: 1170px;
+	height: 200px;
+	background-color: white;
+}
+.container .row3{
+	width: 1170px;
+	height: 500px;
+}
+
+.container .row3 .content1{
+	width: 390px;
+	height: 500px;
+	background-image: url(../image/apple.jpg);
+	float: left;
+}
+.container .row3 .content2{
+	width: 390px;
+	height: 500px;
+	background-image: url(../image/kiwi.png);
+
+	float: left;
+}
+.container .row3 .content3{
+	width: 390px;
+	height: 500px;
+	background-image: url(../image/water2.png);
+	background-size: 94%;
+	float: left;
+}
+
+.container .row4{
+	width: 1170px;
+	height: 250px;
+	background-color: whitesmoke;
+	float: left;
+}
+.container .row5{
+	width: 1170px;
+	height: 250px;
+	background-color: black;
+	float: left;
+}
+.container .row6{
+	width: 1170px;
+	height: 250px;
+	background-image: url(../image/cherry.png);
+	background-size: 150%;
+	float: left;
+}
+
+.container .row7{
+	width: 1170px;
+	height: 500px;
+	background-color: yellow;
+	float: left;
+}
+
+.container .row7 .content4{
+	width: 50px;
+	height: 500px;
+	background-color: black;
+	float: left;
+}
+
+.container .row7 .content5{
+	width: 535px;
+	height: 500px;
+	background-image: url(../image/ch.png);
+    background-size: 97%;
+	float: left;
+}
+
+.container .row7 .content6{
+	width: 50px;
+	height: 500px;
+	background-color: whitesmoke;
+	float: left;
+}
+.container .row7 .content7{
+	width: 535px;
+	height: 500px;
+	background-image: url(../image/cherry.png);
+	float: left;
+}
+
+.container .row7 .content7{
+	width: 535px;
+	height: 500px;
+	background-color: black;
+	float: left;
+}
+
+.container .row7 .content7 .head1{
+	width: 535px;
+	height: 225px;
+	background-image: url(../image/straw.png);
+	float: left;
+}
+
+.container .row7 .content7 .head2{
+	width: 535px;
+	height: 50px;
+	background-color: whitesmoke;
+	float: left;
+}
+
+.container .row7 .content7 .head3{
+	width: 535px;
+	height: 225px;
+	background-image: url(../image/grape.png);
+	background-size: 90%;
+	float: left;
+}
+.container .row8{
+	width: 1170px;
+	height: 500px;
+	background-color: whitesmoke;
+	float: left;
+}
+.container .row9{
+	width: 1170px;
+	height: 500px;
+	background-color: yellow;
+	float: left;
+}
+
+.container .row9 .content8{
+	width: 585px;
+	height: 500px;
+	background-color: black;
+	float: left;
+}
+
+.container .row9 .content9{
+	width: 585px;
+	height: 500px;
+	background-image: url(../image/app2.png);
+	float: left;
+}
