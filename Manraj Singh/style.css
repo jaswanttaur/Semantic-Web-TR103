@@ -1,30 +1,35 @@
 button{
-    width: 200px;
-    height: 70px;
+    width: 150px;
+    height: 50px;
     border-radius: 5px;
-    background-color:rgb(12, 221, 225);
     box-shadow: 5px 4px 10px rgb(13, 14, 13);
+
+    background-color:rgb(12, 221, 225);
     color:rgb(14, 15, 15);
     font-size: x-large;
 
 }
+button:hover{
+    box-shadow: 5px 4px 5px rgb(109, 198, 231);
 
+}
 body{
     background-color: darkgray;
-    margin-left: 100px;
-    /* font-size: small; */
+    
 }
 header{
-    margin-top: 70px;
+    margin-top: 50px;
+    border: 20px cyan;
+
 }
 h1{
-    background-color: coral;
+    background-color: rgb(214, 20, 185);
     font-size:60px;
-    width: 1170px;
-    height: 100px;
-    
+    width: 800px;
+    height: 80px;
+    color: rgb(23, 24, 24);
     border-radius: 10px;
-    box-shadow: 10px 10px 20px rgb(81, 79, 83) ;
+    box-shadow: 8px 8px 10px  rgb(4, 4, 54) ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
     text-align: center;
@@ -44,10 +49,12 @@ h1{
 }
 .gridd{
     padding: 50px 50px;
-    margin: 150px 150px;
+    margin: 100px 150px;
     background-color: rgb(80, 98, 231);
     display:grid;
-    box-shadow: 10px 10px 10px;
+    border-radius: 10px;
+    
+    box-shadow: 10px 10px 10px rgb(67, 60, 60);
     grid-template-columns:1fr 1fr 1fr 1fr;
     /* grid-area: 100px; */
     /* column-gap: 5px; */

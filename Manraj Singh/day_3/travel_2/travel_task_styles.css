@@ -26,6 +26,7 @@ background-color: rgb(227, 220, 220);
     z-index: 100;
     width: 100%;
     height: 100%;
+}
     /* background: repeating-linear-gradient(
         to right,
         rgb(105, 215, 227,0.8), /* Blue color with 50% opacity */
@@ -34,7 +35,7 @@ background-color: rgb(227, 220, 220);
         /* transparent 60px */
     /* ); */
     /* pointer-events: none; Ensures that the strips don't interfere with the content */ */
-}
+
 
 .container > * {
     position: relative;
@@ -466,10 +467,10 @@ background-color: rgb(227, 220, 220);
 .section5 .content1 h2{
     margin-top: 35px;
 }
-.section5 .content1 .p{
+/* .section5 .content1 .p{
     /* align-items: justify; */
   
-}
+/* }  */
 .section5 .content2 img{
     float: right;
     margin-top: 55px;
@@ -804,7 +805,7 @@ hr{
     height: 50px;
    
 }
- .footer p{
+.footer p{
     /* background-color: #fff; */
     padding-top: 400px;
     width: 800px;
@@ -815,7 +816,5 @@ hr{
     font-size: 25px;
     margin-top: 90px;
     text-align: center;
-    align-items: center;
-    
-
- }
+    /* align-items: center; */
+}
