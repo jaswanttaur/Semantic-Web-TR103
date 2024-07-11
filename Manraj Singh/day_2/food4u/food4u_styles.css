@@ -1,0 +1,423 @@
+.container{
+    /* background:none; */
+    background-color: rgb(243, 243, 243);
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.header{
+    color:aliceblue;
+    height: 500PX;
+    
+    margin-bottom: 0px;
+    background-color: rgb(235, 233, 129);
+    /* background-image: linear-gradient(to bottom right,rgb(214, 217, 31),rgb(201, 225, 199)); */
+}
+.EXPRESS_DELIVERY{
+    /* background-color: rgb(226, 63, 197); */
+    z-index: 800;
+    font-size: 15px;
+    text-align: justify;
+    color: #000;
+    /* width: 400PX; */
+    /* height: 150PX; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    TOP:5PX;
+    float: right;
+    right: 5PX;
+}
+nav{
+    /* background-color: #ae2020; */
+    position: relative;
+    top:-450px;
+    font-weight: 900;
+    font-size: 20px;
+    color: #000;
+    right:-450px;
+    z-index: 100;
+
+    
+    
+}
+nav ul {
+     list-style-type: none;
+}
+nav ul li{
+    float: left;
+    margin-left: 70px;
+    
+}
+.EXPRESS_DELIVERY   p{
+    margin:5px;
+ 
+}
+
+.food4u{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 800;
+    padding-left: 50px;
+}
+.areuhungry{
+    font-size: 45px;
+}
+.text_content h3{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.text_content h1{
+    font-size: 80px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0px;
+}
+.text_content{
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right,rgb(214, 217, 31),rgb(219, 214, 63));
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    /* background-color: rgb(206, 199, 9); */
+    clip-path: polygon(0% 0%,100% 0%,92% 100%,0% 100%);
+    display: inline-block;
+}
+.section2{
+    background-color: rgb(245, 246, 246);
+    /* border:5px solid  #000; */
+    display:flex ;
+    height: 650px;
+    
+    
+    flex-direction:column;
+    width: 100%;
+    /* /* margin-top: 0px; */
+    /* padding-top: 0px; */ 
+    /* font-size:0px; */
+    /* margin-bottom: 100px; */
+    /* padding-bottom: 110px; */
+}
+.section2 h1{
+    flex:1;
+    text-align:center;
+    color: rgb(123, 119, 119);
+    font-size:50px;
+    /* background: linear-gradient(black,grey); */
+    /* color:linear-gardient(black,grey) */
+   
+}
+.section2 p{
+    /* width: 1170px; */
+    text-align: center;
+    display: inline-flex;
+    margin: auto;
+    width: 800px;
+    color: rgb(125, 129, 125);
+    padding-bottom: 170px;
+}
+.ordernow_button button{
+    width: 190px;
+    height: 50px;
+    background-color:transparent;
+    border: 1PX solid black;
+    color: black;
+    font-weight: 700;
+    font-size: larger;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    
+}
+.MAIN_DISHES{
+    display: inline-block;
+    justify-content: space-between;
+    z-index: 100;
+    top: -150px;
+    position: relative;
+   width: 1170PX;
+    text-align: center;
+    
+
+}
+.MAIN_DISHES H4{
+    font-weight: 900;
+    color: #000;
+}
+.DISH1 P,.DISH2 P, .DISH3 P{
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+    padding: 0px 0PX 20PX 0;
+    color: gray;
+    
+}
+.MAIN_DISHES .DISH1{
+    width: 360PX;
+    /* background-color: #e74c3c; */
+    text-align: center;
+    float: left;
+    
+}
+.MAIN_DISHES .DISH2 {
+    float: LEFT;
+    text-align: center;
+
+    width: 350px;
+    /* background-color: aquamarine; */
+    height: 350px;
+
+}
+.DISH2 .pizza2{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.DISH3{ 
+    FLOAT:LEFT;
+    width:360px;
+     /* background-color: #e74c3c; */
+    
+ }
+.MAIN_DISHES BUTTON{
+    background-color: rgb(252, 231, 5);
+    width: 150PX;
+    height: 40PX;
+    margin: 0 auto;
+    font-weight: bolder;
+    border: NONE;
+}
+.yellow_line{
+    width: 1170px;
+    height:90px;
+    background-color: rgb(203, 203, 75) ;
+    opacity: 45%;
+    position: absolute;
+    top: 800PX;
+    z-index: 20;
+
+}
+
+
+.section3{
+    background-color:#F5F6F6;
+
+    text-align: center;
+    padding-top: 50PX;
+    height: 500px;
+}
+.section3 H3{
+    padding-bottom: 0PX;
+    margin: 0PX;
+}
+.section3 H1{
+    margin: 0;
+}
+.section3 P{
+    width: 800PX;
+    margin: 0 auto;
+    padding-bottom: 20PX;
+}
+
+.section3 .float_image {
+    display: inline-block;
+    margin:  0 auto;
+    z-index: 40;
+    position:relative;
+}
+.section3 .float_image_bg{
+    opacity: 40%;
+    position: relative;
+    top: -290px;
+    display: flex;
+    z-index: 10;
+    justify-content: space-between;
+}
+
+.section4{
+    height: 500px;
+    background-color:#F5F6F6;
+}
+.section4 .Dinner_Plates{
+    height:420px;
+    /* display: inline-block; */
+    float:left;
+}
+.section4 .Dinner_Plates img{
+    width: 580px;
+    margin-left: 30px;
+    height: 100%;
+    margin: 0px 10px 0 30px;
+    float: left;
+
+}
+
+.section4 .image_div{
+    /* background-color: aquamarine; */
+    width: 550px;
+    float: left;
+}
+.section4 .image_div img{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 205px;
+    padding: 0 10px 20px 0;
+    /* float: left; */
+}
+TABLE{
+    display: inline-block;
+    align-items: c;
+    
+    /* align-items: CENTER; */
+}
+/* .images{
+    margin: 20px 10px;
+    
+    background-color: wheat;
+    /* grid-template-columns:50px 50px; */
+    /* column-gap: 200px; */
+    
+/* } */
+/* .images div{
+    display: inline-block;
+} */ */
+.header p{
+    margin:0px 20px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+
+
+
+#Reservation{
+    /* margin-top: 150px; */
+    font-size: 30px;
+    background-color:#F5F6F6;
+
+    text-align: center;
+    align-items: center;
+    display: flexbox;
+    height: 400px;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+#Reservation h6{
+    padding: 10px ;
+    margin: 0;
+    font-size: 30px;
+}
+#Reservation legend{
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+input{
+    width: 270px;
+    height: 40px;
+    font-size: 15px;
+    padding: 0 0 0 20px;
+    border-radius: 4px;
+    /* border: none; */
+}
+#Reservation button{
+    width: 290px;
+    margin-left: 2px;
+    font-weight: bolder;
+    background-color: rgb(225, 225, 78);
+    border: 1px solid #2d26fc;
+}
+
+
+
+.footer{
+   color: black;
+   position:absolute;
+   background-image:url("images/floral-ornaments.jpg") ;
+    width:1170px;
+    background-position: center;
+    background-size: cover;
+    
+    height:300px;
+
+   /* background-image:url(\images\floral-ornaments.jpg) ; */
+}
+.footer .para{
+    /* background-color: aqua; */
+    width: 40%;
+    float: left;
+    color: rgb(255, 123, 0);
+    padding: 40px 40px 10px 60px;
+}
+.footer .para p{
+    justify-content: center;
+    color: #000;
+    text-align: justify;
+    
+}
+.footer .icons{
+    /* background-color: aquamarine; */
+    float: left;
+    margin: 120px;
+    width: 25%;
+    padding-top: 2px;
+    align-items: center;
+    vertical-align: top;
+
+}
+.footer .icons p,.footer .icons img{
+    float: left;
+    
+    margin-left: 15px;
+    padding: 0;
+}
+.footer .icons img{
+    padding-top: 8px;
+}
+button{
+    border: none;
+    display: block;
+    background-color: yellow;
+    padding:8px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pizza{
+    background: none;
+    
+    position: relative;
+    /* z-index: 40; */
+    top: -580PX;
+    left: 600PX;
+    margin-right: 30px;
+    
+    
+    /* align-items: center; */
+    
+}
+.tomato{
+    position: relative;
+    top: -125px;
+    left:-75px;
+    opacity: 0.8;
+    /* rotate: 80deg; */
+}
+
+.leaf{
+    top:-200px;
+    position: relative;
+    rotate: 70deg;
+    opacity: 0.7;
+    right:-200px;
+}
+.leaf2{
+    top:-400px;
+    position: relative;
+    rotate: -10deg;
+    opacity: 0.7;
+    left:-850px;
+}
