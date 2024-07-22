@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: Private
+Allow: Public
+
+Sitemap: http://www.w3.org/2001/XMLSchema-instance
