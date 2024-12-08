@@ -1,0 +1,28 @@
+body {
+    font-family: 'Playwrite AU VIC', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.flower-container {
+    margin: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flower-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.flower-title {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.flower-description {
+    font-size: 1.2em;
+    margin-top: 10px;
+}

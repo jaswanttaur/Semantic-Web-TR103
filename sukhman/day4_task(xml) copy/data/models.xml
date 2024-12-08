@@ -1,0 +1,17 @@
+<models>
+    <model>
+        <name>Model S</name>
+        <image>images/model-s.png</image>
+        <description>Experience luxury and performance with the Model S.</description>
+    </model>
+    <model>
+        <name>Model E</name>
+        <image>images/model-e.png</image>
+        <description>The perfect blend of elegance and efficiency.</description>
+    </model>
+    <model>
+        <name>Model G</name>
+        <image>images/model-g.png</image>
+        <description>Unleash the power with the rugged Model G.</description>
+    </model>
+</models>

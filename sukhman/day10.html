@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Diary</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        
+    }
+    .content-box {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 1200px;
+        width: 100%;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    p {
+        line-height: 1.6;
+        color: #555;
+    }
+    .button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .action-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .action-button:hover {
+        background-color: #0056b3;
+    }
+    .action-button a {
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+<div class="content-box">
+    <h1>Day 10</h1>
+    <p>
+        SPARQL: A query language for databases, able to retrieve and manipulate data stored in Resource Description Framework (RDF) format.<br><br>
+        Query: A request for data or information from a database.<br>
+        Data set too big: Handling large datasets can be challenging with SPARQL queries.<br><br>
+        We want to represent database we use SPARQL: SPARQL is used to represent and query data in RDF format.<br><br>
+        4 things:<br><br>
+        Prefix URI urn etc: URIs are used to uniquely identify resources in RDF data.<br><br>
+        Select - to fetch: The SELECT clause is used to specify the variables to be returned by the query.<br><br>
+        From -: The FROM clause specifies the data source for the query.<br><br>
+        Where -: The WHERE clause contains the conditions that must be met for data to be returned.<br>
+        Tool apache jena fuseki: Apache Jena Fuseki is a SPARQL server used for managing RDF data.<br><br>
+        Will use for queries language: Apache Jena Fuseki will be used to execute SPARQL queries.<br>
+        Fetch xml file and queries are generated: SPARQL can fetch data in XML format, and queries can be generated to retrieve specific data.<br><br>
+        ? Commands used with:<br>
+        Data -: Commands to interact with the data in the RDF store.<br>
+        Install: Steps to install Apache Jena Fuseki.<br>
+        Import data: Loading data into the RDF store.<br>
+        Normal command (limit 10) - can change limit offset 10 leave then print next: Commands to limit query results and paginate through data.<br>
+        Then will use subject predicate object: RDF data is structured in triples of subject, predicate, and object.<br>
+    </p>
+</div>    
+</body>
+</html>

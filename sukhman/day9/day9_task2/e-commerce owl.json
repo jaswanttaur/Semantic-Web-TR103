@@ -1,0 +1,1682 @@
+{
+  "_comment": "Ontology for E-commerce Website Architecture [Generated for WebVOWL Editor] [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "en"
+    ],
+    "baseIris": [
+      "http://example.org/"
+    ],
+    "iri": "http://example.org/ecommerceOntology/",
+    "title": {
+      "en": "E-commerce Ontology"
+    },
+    "description": {
+      "en": "Ontology for the system architecture of an e-commerce website."
+    }
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.41",
+      "translation": [
+        374,
+        162.04
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "User",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Product",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Order",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Payment",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Review",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ShoppingCart",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Category",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Inventory",
+      "type": "owl:Class"
+    },
+    {
+      "id": "CustomerService",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Shipping",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Notification",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Promotion",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Supplier",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Warehouse",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Admin",
+      "type": "owl:Class"
+    },
+    {
+      "id": "NodeId16",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId17",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId18",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId19",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId20",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId21",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId22",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId24",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId25",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId28",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId29",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId30",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId31",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId33",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId34",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId35",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId37",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId38",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId39",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId41",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId42",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId44",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId45",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId46",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId47",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId48",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId49",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId51",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId52",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId53",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId54",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId55",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId56",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "Class57",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "User",
+      "iri": "http://example.org/User",
+      "baseIri": "http://example.org/",
+      "label": "User",
+      "pos": [
+        948.38,
+        146.82
+      ]
+    },
+    {
+      "id": "Product",
+      "iri": "http://example.org/Product",
+      "baseIri": "http://example.org/",
+      "label": "Product",
+      "pos": [
+        18.17,
+        56.71
+      ]
+    },
+    {
+      "id": "Order",
+      "iri": "http://example.org/Order",
+      "baseIri": "http://example.org/",
+      "label": "Order",
+      "pos": [
+        1152.66,
+        636.02
+      ]
+    },
+    {
+      "id": "Payment",
+      "iri": "http://example.org/Payment",
+      "baseIri": "http://example.org/",
+      "label": "Payment",
+      "pos": [
+        1346.61,
+        -11.9
+      ]
+    },
+    {
+      "id": "Review",
+      "iri": "http://example.org/Review",
+      "baseIri": "http://example.org/",
+      "label": "Review",
+      "pos": [
+        849.32,
+        -290.25
+      ]
+    },
+    {
+      "id": "ShoppingCart",
+      "iri": "http://example.org/ShoppingCart",
+      "baseIri": "http://example.org/",
+      "label": "Shopping Cart",
+      "pos": [
+        1151.9,
+        -279.28
+      ]
+    },
+    {
+      "id": "Category",
+      "iri": "http://example.org/Category",
+      "baseIri": "http://example.org/",
+      "label": "Category",
+      "pos": [
+        -254.49,
+        475.54
+      ]
+    },
+    {
+      "id": "Inventory",
+      "iri": "http://example.org/Inventory",
+      "baseIri": "http://example.org/",
+      "label": "Inventory",
+      "pos": [
+        280.43,
+        1294.28
+      ]
+    },
+    {
+      "id": "CustomerService",
+      "iri": "http://example.org/CustomerService",
+      "baseIri": "http://example.org/",
+      "label": "Customer Service",
+      "pos": [
+        1432.74,
+        937.59
+      ]
+    },
+    {
+      "id": "Shipping",
+      "iri": "http://example.org/Shipping",
+      "baseIri": "http://example.org/",
+      "label": "Shipping",
+      "pos": [
+        1108.91,
+        1105.34
+      ]
+    },
+    {
+      "id": "Notification",
+      "iri": "http://example.org/Notification",
+      "baseIri": "http://example.org/",
+      "label": "Notification",
+      "pos": [
+        1531.13,
+        543.96
+      ]
+    },
+    {
+      "id": "Promotion",
+      "iri": "http://example.org/Promotion",
+      "baseIri": "http://example.org/",
+      "label": "Promotion",
+      "pos": [
+        -403.01,
+        -10.56
+      ]
+    },
+    {
+      "id": "Supplier",
+      "iri": "http://example.org/Supplier",
+      "baseIri": "http://example.org/",
+      "label": "Supplier",
+      "pos": [
+        168.98,
+        -397.26
+      ]
+    },
+    {
+      "id": "Warehouse",
+      "iri": "http://example.org/Warehouse",
+      "baseIri": "http://example.org/",
+      "label": "Warehouse",
+      "pos": [
+        -178.21,
+        -334.69
+      ]
+    },
+    {
+      "id": "Admin",
+      "iri": "http://example.org/Admin",
+      "baseIri": "http://example.org/",
+      "label": "Admin",
+      "pos": [
+        363.9,
+        814.97
+      ]
+    },
+    {
+      "id": "NodeId16",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        907.54,
+        -561.86
+      ]
+    },
+    {
+      "id": "NodeId17",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        745.07,
+        -536.65
+      ]
+    },
+    {
+      "id": "NodeId18",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1201.52,
+        -554.27
+      ]
+    },
+    {
+      "id": "NodeId19",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1343.77,
+        -476.93
+      ]
+    },
+    {
+      "id": "NodeId20",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1524.62,
+        -222.78
+      ]
+    },
+    {
+      "id": "NodeId21",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1606.3,
+        -81.63
+      ]
+    },
+    {
+      "id": "NodeId22",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1579.27,
+        86.39
+      ]
+    },
+    {
+      "id": "NodeId24",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1760.43,
+        431.56
+      ]
+    },
+    {
+      "id": "NodeId25",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1768.85,
+        622.04
+      ]
+    },
+    {
+      "id": "NodeId28",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1568.68,
+        1167.6
+      ]
+    },
+    {
+      "id": "NodeId29",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1676.92,
+        994.77
+      ]
+    },
+    {
+      "id": "NodeId30",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -228.44,
+        -603.52
+      ]
+    },
+    {
+      "id": "NodeId31",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -383.96,
+        -497.17
+      ]
+    },
+    {
+      "id": "NodeId33",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -624.5,
+        135.21
+      ]
+    },
+    {
+      "id": "NodeId34",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -592.17,
+        -200.46
+      ]
+    },
+    {
+      "id": "NodeId35",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -664.58,
+        -30.26
+      ]
+    },
+    {
+      "id": "NodeId37",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -235.44,
+        747.27
+      ]
+    },
+    {
+      "id": "NodeId38",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -400.8,
+        728.29
+      ]
+    },
+    {
+      "id": "NodeId39",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -498.84,
+        618.47
+      ]
+    },
+    {
+      "id": "NodeId41",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        380.35,
+        -539.45
+      ]
+    },
+    {
+      "id": "NodeId42",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        258.6,
+        -668.53
+      ]
+    },
+    {
+      "id": "NodeId44",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        102.05,
+        -670.12
+      ]
+    },
+    {
+      "id": "NodeId45",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -515.33,
+        463.9
+      ]
+    },
+    {
+      "id": "NodeId46",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        931.37,
+        1298.1
+      ]
+    },
+    {
+      "id": "NodeId47",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1260.56,
+        1328.36
+      ]
+    },
+    {
+      "id": "NodeId48",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1091.96,
+        1384.48
+      ]
+    },
+    {
+      "id": "NodeId49",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        576.14,
+        911.41
+      ]
+    },
+    {
+      "id": "NodeId51",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        182.2,
+        670.25
+      ]
+    },
+    {
+      "id": "NodeId52",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        155.49,
+        953.28
+      ]
+    },
+    {
+      "id": "NodeId53",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        261.17,
+        1572.79
+      ]
+    },
+    {
+      "id": "NodeId54",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        88.32,
+        1496.11
+      ]
+    },
+    {
+      "id": "NodeId55",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        24.1,
+        1332.45
+      ]
+    },
+    {
+      "id": "NodeId56",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        445.44,
+        1504.69
+      ]
+    },
+    {
+      "id": "Class57",
+      "iri": "http://example.org/ecommerceOntology/ecommer_",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "e-commerce ",
+      "pos": [
+        457.09,
+        323.66
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "placesOrder",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "makesPayment",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "reviews",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "addsToCart",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "belongsToCategory",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "managedBy",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "trackedBy",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "deliveredBy",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "notifies",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "promotedBy",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "suppliedBy",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "storedIn",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "datatypeProperty13",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty14",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty15",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty16",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty17",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty18",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty19",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty21",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty22",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty23",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty24",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty25",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty26",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty27",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty28",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty29",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty30",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty31",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty32",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty33",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty34",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty35",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty36",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty37",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty38",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty39",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty40",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty41",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty42",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty43",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty44",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty45",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty46",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "objectProperty47",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty48",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "objectProperty49",
+      "type": "owl:ObjectProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "placesOrder",
+      "iri": "http://example.org/placesOrder",
+      "baseIri": "http://example.org/",
+      "label": "places order",
+      "attributes": [
+        "object"
+      ],
+      "domain": "User",
+      "range": "Order",
+      "pos": [
+        1050.52,
+        391.42
+      ]
+    },
+    {
+      "id": "makesPayment",
+      "iri": "http://example.org/makesPayment",
+      "baseIri": "http://example.org/",
+      "label": "makes payment",
+      "attributes": [
+        "object"
+      ],
+      "domain": "User",
+      "range": "Payment",
+      "pos": [
+        1147.5,
+        67.46
+      ]
+    },
+    {
+      "id": "reviews",
+      "iri": "http://example.org/reviews",
+      "baseIri": "http://example.org/",
+      "label": "reviews",
+      "attributes": [
+        "object"
+      ],
+      "domain": "User",
+      "range": "Review",
+      "pos": [
+        898.85,
+        -71.72
+      ]
+    },
+    {
+      "id": "addsToCart",
+      "iri": "http://example.org/addsToCart",
+      "baseIri": "http://example.org/",
+      "label": "adds to cart",
+      "attributes": [
+        "object"
+      ],
+      "domain": "User",
+      "range": "ShoppingCart",
+      "pos": [
+        1050.14,
+        -66.23
+      ]
+    },
+    {
+      "id": "belongsToCategory",
+      "iri": "http://example.org/belongsToCategory",
+      "baseIri": "http://example.org/",
+      "label": "belongs to category",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Product",
+      "range": "Category",
+      "pos": [
+        -118.16,
+        266.13
+      ]
+    },
+    {
+      "id": "managedBy",
+      "iri": "http://example.org/managedBy",
+      "baseIri": "http://example.org/",
+      "label": "managed by",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Order",
+      "range": "CustomerService",
+      "pos": [
+        1292.7,
+        786.81
+      ]
+    },
+    {
+      "id": "trackedBy",
+      "iri": "http://example.org/trackedBy",
+      "baseIri": "http://example.org/",
+      "label": "tracked by",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Inventory",
+      "range": "Admin",
+      "pos": [
+        322.16,
+        1054.62
+      ]
+    },
+    {
+      "id": "deliveredBy",
+      "iri": "http://example.org/deliveredBy",
+      "baseIri": "http://example.org/",
+      "label": "delivered by",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Order",
+      "range": "Shipping",
+      "pos": [
+        1130.78,
+        870.68
+      ]
+    },
+    {
+      "id": "notifies",
+      "iri": "http://example.org/notifies",
+      "baseIri": "http://example.org/",
+      "label": "notifies",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Order",
+      "range": "Notification",
+      "pos": [
+        1341.89,
+        589.99
+      ]
+    },
+    {
+      "id": "promotedBy",
+      "iri": "http://example.org/promotedBy",
+      "baseIri": "http://example.org/",
+      "label": "promoted by",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Product",
+      "range": "Promotion",
+      "pos": [
+        -192.42,
+        23.08
+      ]
+    },
+    {
+      "id": "suppliedBy",
+      "iri": "http://example.org/suppliedBy",
+      "baseIri": "http://example.org/",
+      "label": "supplied by",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Product",
+      "range": "Supplier",
+      "pos": [
+        93.58,
+        -170.27
+      ]
+    },
+    {
+      "id": "storedIn",
+      "iri": "http://example.org/storedIn",
+      "baseIri": "http://example.org/",
+      "label": "stored in",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Product",
+      "range": "Warehouse",
+      "pos": [
+        -80.02,
+        -138.99
+      ]
+    },
+    {
+      "id": "datatypeProperty13",
+      "iri": "http://example.org/ecommerceOntology/postive_",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "postive ",
+      "domain": "Review",
+      "range": "NodeId16",
+      "pos": [
+        882.6,
+        -445.5
+      ]
+    },
+    {
+      "id": "datatypeProperty14",
+      "iri": "http://example.org/ecommerceOntology/negative",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "negative",
+      "domain": "Review",
+      "range": "NodeId17",
+      "pos": [
+        789.57,
+        -431.47
+      ]
+    },
+    {
+      "id": "datatypeProperty15",
+      "iri": "http://example.org/ecommerceOntology/quantity",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "quantity",
+      "domain": "ShoppingCart",
+      "range": "NodeId18",
+      "pos": [
+        1180.24,
+        -436.38
+      ]
+    },
+    {
+      "id": "datatypeProperty16",
+      "iri": "http://example.org/ecommerceOntology/removed_for_cart",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "removed for cart",
+      "domain": "ShoppingCart",
+      "range": "NodeId19",
+      "pos": [
+        1260.4,
+        -391.04
+      ]
+    },
+    {
+      "id": "datatypeProperty17",
+      "iri": "http://example.org/ecommerceOntology/online_payment",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "online payment",
+      "domain": "Payment",
+      "range": "NodeId20",
+      "pos": [
+        1447.52,
+        -131.44
+      ]
+    },
+    {
+      "id": "datatypeProperty18",
+      "iri": "http://example.org/ecommerceOntology/COD",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "COD",
+      "domain": "Payment",
+      "range": "NodeId21",
+      "pos": [
+        1487.35,
+        -49.69
+      ]
+    },
+    {
+      "id": "datatypeProperty19",
+      "iri": "http://example.org/ecommerceOntology/card_payment",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "card payment",
+      "domain": "Payment",
+      "range": "NodeId22",
+      "pos": [
+        1474.14,
+        41.98
+      ]
+    },
+    {
+      "id": "datatypeProperty21",
+      "iri": "http://example.org/ecommerceOntology/order_accpeted",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "order accepted",
+      "domain": "Notification",
+      "range": "NodeId24",
+      "pos": [
+        1658.03,
+        481.76
+      ]
+    },
+    {
+      "id": "datatypeProperty22",
+      "iri": "http://example.org/ecommerceOntology/track_your_order",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "track your order",
+      "domain": "Notification",
+      "range": "NodeId25",
+      "pos": [
+        1660.49,
+        586.45
+      ]
+    },
+    {
+      "id": "datatypeProperty23",
+      "iri": "http://example.org/ecommerceOntology/defected_product",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "defected product",
+      "domain": "CustomerService",
+      "range": "NodeId28",
+      "pos": [
+        1510.47,
+        1069.12
+      ]
+    },
+    {
+      "id": "datatypeProperty24",
+      "iri": "http://example.org/ecommerceOntology/return_",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "return ",
+      "domain": "CustomerService",
+      "range": "NodeId29",
+      "pos": [
+        1565.92,
+        968.78
+      ]
+    },
+    {
+      "id": "datatypeProperty25",
+      "iri": "http://example.org/ecommerceOntology/nearby_loc",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "Automated Warehouse",
+      "domain": "Warehouse",
+      "range": "NodeId30",
+      "pos": [
+        -206.99,
+        -488.68
+      ]
+    },
+    {
+      "id": "datatypeProperty26",
+      "iri": "http://example.org/ecommerceOntology/far_way",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "Regional Warehouse",
+      "domain": "Warehouse",
+      "range": "NodeId31",
+      "pos": [
+        -294.38,
+        -426.42
+      ]
+    },
+    {
+      "id": "datatypeProperty27",
+      "iri": "http://example.org/ecommerceOntology/ads",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "Discount Promotion",
+      "domain": "Promotion",
+      "range": "NodeId33",
+      "pos": [
+        -527.04,
+        71.07
+      ]
+    },
+    {
+      "id": "datatypeProperty28",
+      "iri": "http://example.org/ecommerceOntology/influencer",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "Buy One Get One (BOGO) Promotion",
+      "domain": "Promotion",
+      "range": "NodeId34",
+      "pos": [
+        -510.25,
+        -118.22
+      ]
+    },
+    {
+      "id": "datatypeProperty29",
+      "iri": "http://example.org/ecommerceOntology/social_media",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "Free Shipping Promotion",
+      "domain": "Promotion",
+      "range": "NodeId35",
+      "pos": [
+        -545.48,
+        -21.29
+      ]
+    },
+    {
+      "id": "datatypeProperty30",
+      "iri": "http://example.org/ecommerceOntology/shoes",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "Home & Kitchen",
+      "domain": "Category",
+      "range": "NodeId37",
+      "pos": [
+        -243.57,
+        631.35
+      ]
+    },
+    {
+      "id": "datatypeProperty31",
+      "iri": "http://example.org/ecommerceOntology/cloths",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "cloths",
+      "domain": "Category",
+      "range": "NodeId38",
+      "pos": [
+        -337.27,
+        618.55
+      ]
+    },
+    {
+      "id": "datatypeProperty32",
+      "iri": "http://example.org/ecommerceOntology/beauty_product",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "Electronics",
+      "domain": "Category",
+      "range": "NodeId39",
+      "pos": [
+        -389.69,
+        554.63
+      ]
+    },
+    {
+      "id": "datatypeProperty33",
+      "iri": "http://example.org/ecommerceOntology/Manufacturer",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "Manufacturer",
+      "domain": "Supplier",
+      "range": "NodeId41",
+      "pos": [
+        287.98,
+        -477.31
+      ]
+    },
+    {
+      "id": "datatypeProperty34",
+      "iri": "http://example.org/ecommerceOntology/Wholesaler",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "Wholesaler",
+      "domain": "Supplier",
+      "range": "NodeId42",
+      "pos": [
+        219.98,
+        -551.64
+      ]
+    },
+    {
+      "id": "datatypeProperty35",
+      "iri": "http://example.org/ecommerceOntology/Distributor",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "Distributor",
+      "domain": "Supplier",
+      "range": "NodeId44",
+      "pos": [
+        130.78,
+        -552.97
+      ]
+    },
+    {
+      "id": "datatypeProperty36",
+      "iri": "http://example.org/ecommerceOntology/Books",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "Books",
+      "domain": "Category",
+      "range": "NodeId45",
+      "pos": [
+        -396.63,
+        469.2
+      ]
+    },
+    {
+      "id": "datatypeProperty37",
+      "iri": "http://example.org/ecommerceOntology/ShippingMethod",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "ShippingCarrier",
+      "domain": "Shipping",
+      "range": "NodeId46",
+      "pos": [
+        1007.81,
+        1215.11
+      ]
+    },
+    {
+      "id": "datatypeProperty38",
+      "iri": "http://example.org/ecommerceOntology/datatypeProperty38",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "newDatatypeProperty",
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "Shipping",
+      "range": "NodeId47",
+      "pos": [
+        1195.39,
+        1232.52
+      ]
+    },
+    {
+      "id": "datatypeProperty39",
+      "iri": "http://example.org/ecommerceOntology/ShippingStatus",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "ShippingStatus",
+      "domain": "Shipping",
+      "range": "NodeId48",
+      "pos": [
+        1099.22,
+        1264.86
+      ]
+    },
+    {
+      "id": "datatypeProperty40",
+      "iri": "http://example.org/ecommerceOntology/UserManagement",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "UserManagement",
+      "domain": "Admin",
+      "range": "NodeId49",
+      "pos": [
+        481.78,
+        868.53
+      ]
+    },
+    {
+      "id": "datatypeProperty41",
+      "iri": "http://example.org/ecommerceOntology/RoleManagement",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "RoleManagement",
+      "domain": "Admin",
+      "range": "NodeId51",
+      "pos": [
+        259.77,
+        732.04
+      ]
+    },
+    {
+      "id": "datatypeProperty42",
+      "iri": "http://example.org/ecommerceOntology/SystemSettings",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "SystemSettings",
+      "domain": "Admin",
+      "range": "NodeId52",
+      "pos": [
+        246.4,
+        892.95
+      ]
+    },
+    {
+      "id": "datatypeProperty43",
+      "iri": "http://example.org/ecommerceOntology/ProductInventory",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "ProductInventory",
+      "domain": "Inventory",
+      "range": "NodeId53",
+      "pos": [
+        269.42,
+        1453.47
+      ]
+    },
+    {
+      "id": "datatypeProperty44",
+      "iri": "http://example.org/ecommerceOntology/StockManagement",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "StockManagement",
+      "domain": "Inventory",
+      "range": "NodeId54",
+      "pos": [
+        171.9,
+        1408.3
+      ]
+    },
+    {
+      "id": "datatypeProperty45",
+      "iri": "http://example.org/ecommerceOntology/WarehouseManagement",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "WarehouseManagement",
+      "domain": "Inventory",
+      "range": "NodeId55",
+      "pos": [
+        140.79,
+        1315.07
+      ]
+    },
+    {
+      "id": "datatypeProperty46",
+      "iri": "http://example.org/ecommerceOntology/InventoryReports",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "InventoryReports",
+      "domain": "Inventory",
+      "range": "NodeId56",
+      "pos": [
+        374.44,
+        1414.15
+      ]
+    },
+    {
+      "id": "objectProperty47",
+      "iri": "http://example.org/ecommerceOntology/user",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "user",
+      "domain": "Class57",
+      "range": "User",
+      "pos": [
+        702.73,
+        235.24
+      ]
+    },
+    {
+      "id": "objectProperty48",
+      "iri": "http://example.org/ecommerceOntology/prodcut_",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "prodcut ",
+      "domain": "Class57",
+      "range": "Product",
+      "pos": [
+        237.63,
+        190.19
+      ]
+    },
+    {
+      "id": "objectProperty49",
+      "iri": "http://example.org/ecommerceOntology/objectProperty49",
+      "baseIri": "http://example.org/ecommerceOntology/",
+      "label": "newObjectProperty",
+      "attributes": [
+        "object"
+      ],
+      "domain": "Class57",
+      "range": "Admin",
+      "pos": [
+        410.5,
+        569.32
+      ]
+    }
+  ]
+}
