@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Web Design and Development Course</title>
+    <style>
+        body {
+            background-image: url('images/lbimgpng.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+            color: #fff; /* Text color */
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+        
+        header, main, footer {
+            padding: 20px;
+            margin: 20px;
+        }
+        
+        h1, h2, h3 {
+            color: #ffef0dcc; /* Heading color */
+        }
+        
+        p, li, label {
+            color: #fff; /* Text and label color */
+        }
+        
+        input, textarea {
+            width: 100%;
+            max-width: 500px; /* Set a maximum width for inputs and textarea */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff; /* Input background color */
+            color: #000; /* Input text color */
+        }
+        
+        .submit-button {
+            background-color: #ffef0dcc; /* Button background color */
+            color: #000000; /* Button text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .submit-button:hover {
+            background-color: #e9da10cc; /* Button background color on hover */
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff; /* Footer text color */
+        }
+        
+        form {
+            max-width: 500px; /* Set the maximum width for the form container */
+            margin-left: 0; /* Align the form to the left */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    
+    <main>
+        <section>
+            
+            <p>If you have any questions or need more information about our web design and <br>development courses, feel free to reach out. We’re here to help!</p>
+        </section>
+        
+        <section>
+            <h3>Contact Form</h3>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+        
+        <section>
+            <h3>Other Ways to Contact Us</h3>
+            <p><strong>Email:</strong> support@webdevcourse.com</p>
+            <p><strong>Phone:</strong> +1-800-123-4567</p>
+            <p><strong>Address:</strong> 123 Web Design Street, Tech City, USA</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Web Design and Development Course. All rights reserved.</p>
+    </footer>
+</body>
+</html>

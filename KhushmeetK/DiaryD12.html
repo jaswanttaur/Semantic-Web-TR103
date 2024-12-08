@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 - OWL, WebVOWL & Cloud Services</title> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7ff;
+        }
+        h1 {
+            text-align: center;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 15px;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-top: 20px;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            color: #34495e;
+            list-style-type: square;
+            font-size: 1.1em;
+        }
+        h3 {
+            color: #e74c3c;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+        .content-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a90e2;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .code-snippet {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #4a90e2;
+            margin: 15px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Day 12 - OWL, WebVOWL & Cloud Services</h1>
+    
+    <div class="content-container">
+        <h2> OWL (Web Ontology Language)</h2>
+        <p>The <strong>Web Ontology Language (OWL)</strong> is a semantic web language designed to represent rich and complex knowledge about things, groups of things, and the relationships between them. OWL is utilized to define web ontologies, enabling advanced reasoning and data interpretation by machines. It provides a formal basis for the representation of knowledge, which facilitates interoperability among systems.</p>
+        
+        <p>OWL comes in three sublanguages:</p>
+        <ul>
+            <li><strong>OWL Lite:</strong> Aimed at users needing a classification hierarchy and simple constraints. It is suitable for applications that require a minimal expressiveness.</li>
+            <li><strong>OWL DL:</strong> This version allows for maximum expressiveness while ensuring computational completeness. It supports reasoning but can be complex.</li>
+            <li><strong>OWL Full:</strong> The most expressive version, allowing for full use of RDF and OWL constructs but without guarantees on computational properties.</li>
+        </ul>
+
+        <h2>WebVOWL: Visualizing OWL Ontologies</h2>
+        <p><strong>WebVOWL</strong> is a web-based tool that allows users to visualize OWL ontologies. It provides a graphical representation of classes and their relationships, making complex ontologies easier to understand. Users can navigate through the ontology by clicking on different elements to see their properties and connections.</p>
+
+        <p>The key features of WebVOWL include:</p>
+        <ul>
+            <li>Interactive visualization, allowing zooming, panning, and clicking on elements to see details.</li>
+            <li>Color coding to differentiate between classes, properties, and individuals, enhancing usability.</li>
+            <li>Export options for saving visualizations in various formats.</li>
+        </ul>
+
+        <h2>Exploring Cloud Services: IaaS, PaaS, and SaaS</h2>
+        <p>Cloud computing has revolutionized the way we access and utilize resources. The three primary service models are:</p>
+        
+        <h3>1. Infrastructure as a Service (IaaS)</h3>
+        <p>IaaS provides virtualized computing resources over the internet. Users can rent IT infrastructure such as servers, storage, and networking on a pay-as-you-go basis, which allows for scalability and flexibility.</p>
+        <p><strong>Examples:</strong> AWS EC2, Microsoft Azure, and Google Compute Engine.</p>
+        <p><strong>Use Cases:</strong> IaaS is ideal for businesses that require complete control over their infrastructure without the costs associated with physical hardware.</p>
+
+        <h3>2. Platform as a Service (PaaS)</h3>
+        <p>PaaS offers a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the underlying infrastructure. It provides a framework for developers to build upon, often including development tools, middleware, and database management.</p>
+        <p><strong>Examples:</strong> Google App Engine, Heroku, and Microsoft Azure App Service.</p>
+        <p><strong>Use Cases:</strong> PaaS is suitable for developers who want to create applications without worrying about the hardware and software layers.</p>
+
+        <h3>3. Software as a Service (SaaS)</h3>
+        <p>SaaS delivers software applications over the internet on a subscription basis. Users can access applications via a web browser without needing to install or maintain software on their devices.</p>
+        <p><strong>Examples:</strong> Google Workspace, Salesforce, and Slack.</p>
+        <p><strong>Use Cases:</strong> SaaS is perfect for organizations that want to reduce IT management overhead and provide easy access to software solutions.</p>
+
+        <h2>Practical: OWL Structure for Library Management System</h2>
+        <p>In our practical session, we built an OWL ontology for a <strong>Library Management System</strong>. This ontology included essential entities like <strong>Books</strong>, <strong>Readers</strong>, and <strong>Authors</strong>. The purpose was to model the relationships between these entities, making it easier to manage library operations and data.</p>
+
+        <p>The structure of our OWL ontology included the following components:</p>
+        <ul>
+            <li><strong>Classes:</strong> Represent the main entities (e.g., Book, Reader, Author).</li>
+            <li><strong>Properties:</strong> Define relationships between classes (e.g., a Reader <strong>borrows</strong> a Book).</li>
+            <li><strong>Instances:</strong> Represent individual entities (e.g., 'Harry Potter' as an instance of the Book class).</li>
+        </ul>
+
+        <p>Example: <a href="images/Owl .png" >Structure</a></p>
+
+
+        <p>This ontology allows us to manage library data effectively, enhancing our understanding of relationships within the library system.</p>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 - Postman, XML, JSON, and APIs</title> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7ff;
+        }
+        h1 {
+            text-align: center;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 15px;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-top: 20px;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            color: #34495e;
+            list-style-type: square;
+            font-size: 1.1em;
+        }
+        h3 {
+            color: #e74c3c;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+        .content-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a90e2;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .code-snippet {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #4a90e2;
+            margin: 15px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Day 13 - Postman, XML, JSON, and APIs</h1>
+    
+    <div class="content-container">
+        <h2>Concepts</h2>
+        <p>On the thirteenth day, we delved into the essential tools and formats used in web development and API interaction, focusing on Postman, XML, JSON, and APIs.</p>
+
+        <h2>Postman </h2>
+        <p>Postman is a powerful tool used by developers to interact with APIs. It simplifies the process of making API calls and testing endpoints. With Postman, you can:</p>
+        <ul>
+            <li>Create and manage API requests.</li>
+            <li>Organize requests into collections for better management.</li>
+            <li>Share API documentation with team members.</li>
+            <li>Automate tests for API responses.</li>
+            <li>Simulate various scenarios using mock servers.</li>
+        </ul>
+
+        <h3>Getting Started with Postman</h3>
+        <p>To get started with Postman, follow these steps:</p>
+        <ol>
+            <li><strong>Download and Install:</strong> Visit the Postman website to download and install the application.</li>
+            <li><strong>Create an Account:</strong> Sign up for a free account to save your requests and collections.</li>
+            <li><strong>Create a Request:</strong> Choose the HTTP method (GET, POST, PUT, DELETE) and enter the API endpoint URL.</li>
+            <li><strong>Set Headers:</strong> Add any necessary headers, such as Content-Type and Authorization.</li>
+            <li><strong>Send Request:</strong> Click the "Send" button to see the response from the API.</li>
+        </ol>
+
+        <h2>Understanding XML and JSON</h2>
+        <p>XML (eXtensible Markup Language) and JSON (JavaScript Object Notation) are two commonly used formats for structuring data in web applications and APIs.</p>
+        
+        <h3>XML</h3>
+        <p>XML is a markup language that defines rules for encoding documents in a format that is both human-readable and machine-readable. Key features include:</p>
+        <ul>
+            <li>Uses tags to define elements.</li>
+            <li>Supports nested structures, allowing complex data representation.</li>
+            <li>Widely used for data interchange between systems.</li>
+        </ul>
+        <p><strong>Example of XML:</strong></p>
+        <div class="code-snippet">
+            <code>
+                &lt;library&gt;<br>
+                &nbsp;&nbsp;&lt;book&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;The Great Gatsby&lt;/title&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;author&gt;F. Scott Fitzgerald&lt;/author&gt;<br>
+                &nbsp;&nbsp;&lt;/book&gt;<br>
+                &lt;/library&gt;
+            </code>
+        </div>
+
+        <h3>JSON</h3>
+        <p>JSON is a lightweight data interchange format that is easy to read and write. It is primarily used for transmitting data between a server and web application. Key features include:</p>
+        <ul>
+            <li>Data is represented as key-value pairs.</li>
+            <li>Supports arrays, allowing for structured data.</li>
+            <li>More concise and faster to parse than XML.</li>
+        </ul>
+        <p><strong>Example of JSON:</strong></p>
+        <div class="code-snippet">
+            <code>
+                {<br>
+                &nbsp;&nbsp;"library": {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;"book": {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title": "The Great Gatsby",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"author": "F. Scott Fitzgerald"<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;}<br>
+                }
+            </code>
+        </div>
+
+        <h2>APIs: Connecting Applications</h2>
+        <p>APIs (Application Programming Interfaces) allow different software applications to communicate with each other. They define the methods and data formats that applications can use to request and exchange information.</p>
+        
+        <h3>RESTful APIs</h3>
+        <p>REST (Representational State Transfer) is an architectural style for designing networked applications. RESTful APIs use HTTP requests to perform CRUD (Create, Read, Update, Delete) operations. Key principles include:</p>
+        <ul>
+            <li>Stateless communication: Each request from a client to server must contain all the information needed to understand and process the request.</li>
+            <li>Resource-based: Resources (data entities) are identified by URLs.</li>
+            <li>Use of standard HTTP methods: GET, POST, PUT, DELETE, etc.</li>
+        </ul>
+
+        <h2>Practical: OWL Structure for the Spotify App</h2>
+        <p>In our practical session, we created an OWL (Web Ontology Language) structure for a Spotify app. OWL is used to represent rich and complex knowledge about things, groups of things, and relations between them.</p>
+        <p>Here’s an example of an OWL structure for representing music tracks, artists, and albums in the Spotify app:</p>
+        <div class="code-snippet">
+            <code>
+                &lt;Ontology rdf:about="http://example.org/spotify"&gt;<br>
+                &nbsp;&nbsp;&lt;Class rdf:about="http://example.org/spotify#Track"/&gt;<br>
+                &nbsp;&nbsp;&lt;Class rdf:about="http://example.org/spotify#Artist"/&gt;<br>
+                &nbsp;&nbsp;&lt;Class rdf:about="http://example.org/spotify#Album"/&gt;<br>
+                <br>
+                &nbsp;&nbsp;&lt;ObjectProperty rdf:about="http://example.org/spotify#performedBy"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;rdfs:domain rdf:resource="http://example.org/spotify#Track"/&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;rdfs:range rdf:resource="http://example.org/spotify#Artist"/&gt;<br>
+                &nbsp;&nbsp;&lt;/ObjectProperty&gt;<br>
+                &lt;/Ontology&gt;
+            </code>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

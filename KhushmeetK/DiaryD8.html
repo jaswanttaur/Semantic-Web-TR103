@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8</title> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7ff;
+        }
+        h1 {
+            text-align: center;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 15px;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-top: 20px;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            color: #34495e;
+            list-style-type: square;
+            font-size: 1.1em;
+        }
+        h3 {
+            color: #e74c3c;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+        .content-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a90e2;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .code-snippet {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #4a90e2;
+            margin: 15px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Day 8 - Exploring RDF </h1>
+    
+    <div class="content-container">
+        <h2>Concepts</h2>
+        <p>Today, we delved deeper into the Resource Description Framework (RDF), exploring its serialization formats and the concept of linked data. We also discussed how RDF can be utilized in various applications:</p>
+        <ul>
+            <li><strong>RDF Serialization:</strong> We examined different serialization formats for RDF data, including RDF/XML, Turtle, and JSON-LD, discussing their use cases and benefits.</li>
+            <li><strong>Linked Data Principles:</strong> We learned about the principles of linked data, emphasizing how RDF enables the interlinking of datasets across the web, making data discoverable and reusable.</li>
+            <li><strong>Region-Based RDF:</strong> We explored how RDF can be applied in region-based scenarios, linking geographical data with other information, enhancing data analysis and visualization.</li>
+        </ul>
+
+        <h2>RDF Serialization, Integration, and Applications</h2>
+        <ul>
+            <li><strong>Serialization Formats:</strong> Detailed insights into RDF/XML, Turtle, and JSON-LD, and how they affect data representation and interoperability.</li>
+            <li><strong>Creating Linked Data:</strong> Practical methods for creating linked data using RDF, allowing seamless integration and discovery of related datasets.</li>
+            <li><strong>Applications of RDF:</strong> A focus on real-world applications of RDF in various domains, highlighting platforms like Zomato and Spotify.</li>
+            <li><strong>Practical Use Cases:</strong> Case studies on how RDF can enhance data connectivity and user experiences in applications.</li>
+        </ul>
+
+        <h2>Example RDF Serialization</h2>
+        <p>To illustrate RDF serialization, here are examples of RDF data in different formats:</p>
+
+        <h3>RDF/XML Example</h3>
+        <div class="code-snippet">
+            &lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&gt;<br>
+            &nbsp;&nbsp;&lt;rdf:Description rdf:about="http://example.org/Bob"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;rdf:type rdf:resource="http://example.org/Person"/&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt:friend rdf:resource="http://example.org/Alice"/&gt;<br>
+            &nbsp;&nbsp;&lt;/rdf:Description&gt;<br>
+            &lt;/rdf:RDF&gt;
+        </div>
+
+        <h3>Turtle Example</h3>
+        <div class="code-snippet">
+            @prefix ex: <http://example.org/> .<br>
+            ex:Bob a ex:Person ;<br>
+            &nbsp;&nbsp;ex:friend ex:Alice .
+        </div>
+
+        <h3>JSON-LD Example</h3>
+        <div class="code-snippet">
+            {<br>
+            &nbsp;&nbsp;"@context": "http://schema.org",<br>
+            &nbsp;&nbsp;"@type": "Person",<br>
+            &nbsp;&nbsp;"name": "Bob",<br>
+            &nbsp;&nbsp;"friend": {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"@type": "Person",<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;"name": "Alice"<br>
+            &nbsp;&nbsp;}<br>
+            }
+        </div>
+
+        <p>These examples highlight how RDF can be serialized in different formats, allowing flexibility in data representation.</p>
+
+        <h2>Practical </h2>
+        <p>In our practical session, we were tasked with drawing RDF representations for various popular applications such as Zomato, Spotify, and others. We focused on modeling relationships between different entities, including users, food items, songs, and playlists:</p>
+
+        <h3>Zomato RDF Representation</h3>
+        <div class="code-snippet">
+            &lt;Zomato&gt; &lt;has restaurant&gt; &lt;RestaurantName&gt;.<br>
+            &lt;RestaurantName&gt; &lt;serves cuisine&gt; &lt;CuisineType&gt;.<br>
+            &lt;User&gt; &lt;likes&gt; &lt;RestaurantName&gt;.<br>
+        </div>
+
+        <h3>Spotify RDF Representation</h3>
+        <div class="code-snippet">
+            &lt;Spotify&gt; &lt;has song&gt; &lt;SongTitle&gt;.<br>
+            &lt;SongTitle&gt; &lt;performed by&gt; &lt;ArtistName&gt;.<br>
+            &lt;User&gt; &lt;plays&gt; &lt;SongTitle&gt;.<br>
+        </div>
+
+        <p>This practical experience reinforced our understanding of how RDF can be utilized to represent complex data structures and relationships in web applications.</p>
+
+        
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fae5e5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.content-box {
+    background-color: #CAA8FF;
+    padding: 20px;
+    border: 2px solid #333333;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Align buttons in two columns */
+    gap: 20px; /* Space between upper and lower lines */
+}
+
+.upper-line,
+.lower-line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+}
+
+.button-container a {
+    text-decoration: none;
+}
+
+.button-container button {
+    background-color: #b778f1;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.button-container a:hover button,
+.button-container button:hover {
+    background-color: #45a049; /* New background color on hover */
+    color: white; /* Text color change on hover */
+}
+
+.button-container button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.top-right-image {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bottom-left-image {
+    position: absolute;
+    bottom: 230px;
+    left: 100px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15 - Apache Jena Fuseki: Data Execution and Datasets</title> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7ff;
+        }
+        h1 {
+            text-align: center;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 15px;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-top: 20px;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            color: #34495e;
+            list-style-type: square;
+            font-size: 1.1em;
+        }
+        h3 {
+            color: #e74c3c;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+        .content-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a90e2;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .code-snippet {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #4a90e2;
+            margin: 15px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Day 16 - Data Execution and Datasets</h1>
+    
+    <div class="content-container">
+        <h2>Overview</h2>
+        <p><strong>Apache Jena Fuseki</strong> is a SPARQL server that provides a powerful framework for working with RDF data. It enables users to store, query, and manage RDF datasets efficiently. Fuseki is particularly useful for applications requiring semantic web technologies, allowing for seamless integration of linked data.</p>
+
+        <h2>Setting Up Apache Jena Fuseki</h2>
+        <p>To start working with Fuseki, you need to download and install it on your machine. Here are the steps to set up Fuseki:</p>
+        <ol>
+            <li>Download the latest version of Apache Jena Fuseki from the official website.</li>
+            <li>Extract the downloaded file to your desired directory.</li>
+            <li>Open a terminal and navigate to the Fuseki directory.</li>
+            <li>Run the server using the following command:</li>
+            <div class="code-snippet">
+                <code>./fuseki-server --mem /ds</code>
+            </div>
+            <li>Access the Fuseki web interface at <a href="http://localhost:3030">http://localhost:3030</a>.</li>
+        </ol>
+
+        <h2>Creating a Dataset</h2>
+        <p>Once Fuseki is running, you can create a new dataset where your RDF data will be stored. Follow these steps:</p>
+        <ol>
+            <li>In the Fuseki web interface, click on <strong>Manage Datasets</strong>.</li>
+            <li>Click on <strong>Create Dataset</strong>.</li>
+            <li>Choose a dataset type. For this example, select <strong>In-memory dataset</strong>.</li>
+            <li>Enter a name for your dataset, for example, <strong>Library</strong>.</li>
+            <li>Click on <strong>Create</strong> to finalize the process.</li>
+        </ol>
+
+        <h2>Loading Data into Fuseki</h2>
+        <p>After creating your dataset, you can load RDF data into it. Here’s a short example of how to add data using the Fuseki interface:</p>
+        <ol>
+            <li>Navigate to the dataset you created (e.g., <strong>Library</strong>).</li>
+            <li>Click on <strong>Upload Data</strong>.</li>
+            <li>Choose your RDF file (e.g., <strong>library_data.ttl</strong>) and click on <strong>Upload</strong>.</li>
+        </ol>
+
+        <h3>Example RDF Data</h3>
+        <p>Below is a sample RDF data snippet in Turtle format that you can upload:</p>
+        <div class="code-snippet">
+            <code>
+                @prefix ex: <http://example.org/> .
+                ex:Book1 a ex:Book ;
+                    ex:title "Harry Potter and the Philosopher's Stone" ;
+                    ex:author ex:Author1 .
+
+                ex:Author1 a ex:Author ;
+                    ex:name "J.K. Rowling" .
+            </code>
+        </div>
+
+        <h2>Executing SPARQL Queries</h2>
+        <p>After loading your data, you can query it using SPARQL. Here’s a simple query to retrieve all books and their authors:</p>
+        <div class="code-snippet">
+            <code>
+                PREFIX ex: <http://example.org/>
+                SELECT ?book ?author
+                WHERE {
+                    ?book a ex:Book .
+                    ?book ex:author ?author .
+                }
+            </code>
+        </div>
+        <p>To execute this query:</p>
+        <ol>
+            <li>In the Fuseki web interface, navigate to the <strong>Query</strong> tab of your dataset.</li>
+            <li>Paste the SPARQL query into the query editor.</li>
+            <li>Click <strong>Run</strong> to see the results.</li>
+        </ol>
+
+        <h2>Conclusion</h2>
+        <p>Apache Jena Fuseki is a robust tool for managing RDF data and executing SPARQL queries. By creating datasets and uploading data, you can leverage the power of semantic web technologies to enhance your applications.</p>
+        
+        
+    </div>
+</body>
+</html>

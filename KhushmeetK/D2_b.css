@@ -1,0 +1,114 @@
+.container{
+    width:1170px;
+    height:auto;
+    margin:0 auto;
+}
+
+.container .header{
+    width:1170px;
+    height:250px;
+    background-color:#d87093;
+}
+
+.container .contentrow{
+    width:1170px;
+    height:auto;
+}
+
+.container .contentrow .C1 {
+    width:292px;
+    height:200px;
+    background-color:#ffdead;
+    float:left;
+}
+
+.container .contentrow .C2{
+    width:292px;
+    height:200px;
+    background-color:#fff8dc;
+    float:left;
+}
+
+.container .contentrow .C3{
+    width:292px;
+    height:200px;
+    background-color:#cd5c5c;
+    float:left;
+}
+
+.container .contentrow .C4{
+    width:292px;
+    height:200px;
+    background-color:#9acd32;
+    float:left;
+}
+
+.container .contentrow .C5 {
+    width:292px;
+    height:200px;
+    background-color:#808080;
+    float:left;
+}
+
+.container .contentrow .C6{
+    width:292px;
+    height:200px;
+    background-color:#dddcff;
+    float:left;
+}
+
+.container .contentrow .C7{
+    width:585px;
+    height:200px;
+    background-color:#5ccdbe;
+    float:left;
+}
+
+.container .contentrow .C8{
+    width:585px;
+    height:200px;
+    background-color:#6495ed;
+    float:left;
+}
+
+.container .contentrow .C9{
+    width:292px;
+    height:200px;
+    background-color:#708090;
+    float:left;
+}
+
+.container .contentrow .C10{
+    width:292px;
+    height:200px;
+    background-color:#f5deb4;
+    float:left;
+}
+
+.container .contentrow .C11{
+    width:292px;
+    height:200px;
+    background-color:#ff69b4;
+    float:left;
+}
+
+.container .contentrow .C12{
+    width:585px;
+    height:200px;
+    background-color:#6472ed;
+    float:left;
+}
+
+.container .contentrow .C13{
+    width:292px;
+    height:200px;
+    background-color:#ddb4f5;
+    float:left;
+}
+
+.container .contentrow .C14{
+    width:1170px;
+    height:200px;
+    background-color:#9acd32;
+    float:left;
+}

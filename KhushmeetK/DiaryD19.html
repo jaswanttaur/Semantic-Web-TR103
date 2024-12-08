@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 19 - GitHub and Collaborative Development</title> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7ff;
+        }
+        h1 {
+            text-align: center;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 15px;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-top: 20px;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            color: #34495e;
+            list-style-type: square;
+            font-size: 1.1em;
+        }
+        h3 {
+            color: #e74c3c;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+        .content-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a90e2;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .code-snippet {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #4a90e2;
+            margin: 15px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Day 19 - GitHub and Collaborative Development</h1>
+    
+    <div class="content-container">
+        <h2> GitHub</h2>
+        <p><strong>GitHub</strong> is a web-based platform used for version control and collaborative software development. It allows developers to store, track, and manage their code using Git, a distributed version control system. GitHub provides a user-friendly interface for working with Git repositories, enabling collaboration among multiple contributors on the same project.</p>
+
+        <h2>Collaborative Development with Git</h2>
+        <p>Collaborative development is essential for teams working on projects together. GitHub facilitates this by allowing multiple developers to work on different branches of a project simultaneously. Key features that support collaborative development include:</p>
+        <ul>
+            <li><strong>Pull Requests:</strong> A method for proposing changes to a repository. Other team members can review, comment on, and merge the changes into the main branch.</li>
+            <li><strong>Issues:</strong> A way to track bugs, enhancements, and tasks within a project. Issues can be assigned to specific team members, improving project management.</li>
+            <li><strong>Project Boards:</strong> Kanban-style boards that help teams organize and prioritize work visually.</li>
+        </ul>
+
+        <h2>Getting Started with GitHub Desktop and Command Line</h2>
+        <p><strong>GitHub Desktop</strong> provides a graphical interface for Git and GitHub, simplifying many tasks for those who prefer not to use the command line. It allows you to:</p>
+        <ul>
+            <li>Clone repositories from GitHub to your local machine.</li>
+            <li>Stage changes, commit them, and push to the remote repository.</li>
+            <li>Switch between branches and manage merge conflicts visually.</li>
+        </ul>
+        
+        <h3>Using Git from the Command Line</h3>
+        <p>Many developers prefer using Git via the command line for greater control and flexibility. Here are some essential commands:</p>
+        <div class="code-snippet">
+            <pre>
+git clone <repository-url>   # Clones a repository to your local machine
+git status                    # Displays the status of your working directory
+git add <file>                # Stages changes for commit
+git commit -m "message"       # Commits staged changes with a message
+git push                       # Pushes changes to the remote repository
+git pull                       # Fetches changes from the remote repository
+            </pre>
+        </div>
+
+        <h2>Authentication with TOTP</h2>
+        <p><strong>TOTP (Time-based One-Time Password)</strong> is a secure method for two-factor authentication (2FA) that adds an extra layer of security to your GitHub account. When enabled, TOTP requires a code generated by an authentication app, such as Google Authenticator or Authy, in addition to your password. This helps protect your account from unauthorized access.</p>
+
+        <h3>Setting Up TOTP for GitHub</h3>
+        <ol>
+            <li>Go to your GitHub account settings.</li>
+            <li>Select "Security" from the sidebar.</li>
+            <li>Click on "Enable two-factor authentication".</li>
+            <li>Choose the "Set up using an app" option.</li>
+            <li>Scan the QR code with your authentication app to generate your TOTP codes.</li>
+            <li>Enter the generated code on GitHub to confirm.</li>
+        </ol>
+
+        <h2>Practical </h2>
+        <p>In our practical session, we explored TOTP and practiced applying various Git commands. We set up TOTP for our GitHub accounts to understand how to enhance security in collaborative development. Additionally, we ran through practical scenarios using Git commands to:</p>
+        <ul>
+            <li>Clone a repository and make changes locally.</li>
+            <li>Create a new branch for a feature or bug fix.</li>
+            <li>Commit changes and push them to the remote repository.</li>
+            <li>Create a pull request to merge changes into the main branch.</li>
+        </ul>
+
+        <p>By implementing TOTP and practicing Git commands, we strengthened our understanding of secure collaborative development using GitHub.</p>
+    </div>
+    
+    
+</body>
+</html>

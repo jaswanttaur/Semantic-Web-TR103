@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7ff;
+        }
+        h1 {
+            text-align: center;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 15px;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-top: 20px;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            color: #34495e;
+            list-style-type: square;
+            font-size: 1.1em;
+        }
+        h3 {
+            color: #e74c3c;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+        .content-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a90e2;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .code-snippet {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #4a90e2;
+            margin: 15px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Day 6 - RDF: Resource Description Framework</h1>
+    
+    <div class="content-container">
+        <h2>Learnings</h2>
+        <p>Today, we explored the standards used to represent relationships between data on the web. This included understanding the importance and features of the Resource Description Framework (RDF) and how RDF triples work to link entities and data:</p>
+        <ul>
+            <li><strong>Standards for Data Representation:</strong> We learned about the key standards that allow structured data to be shared and interpreted across the web, emphasizing the role of RDF in creating a linked web of data.</li>
+            <li><strong>RDF Triple Model:</strong> We examined RDF triples, which consist of a subject, predicate, and object, to model relationships between entities.</li>
+            <li><strong>Features of RDF:</strong> RDF provides a flexible and extensible framework to describe resources and their relationships, facilitating data integration and interoperability across different systems.</li>
+        </ul>
+
+        <h2>Topics Covered</h2>
+        <ul>
+            <li><strong>RDF Syntax:</strong> Understanding the structure of RDF statements and how they represent data relationships.</li>
+            <li><strong>RDF Schema (RDFS):</strong> Introduction to RDFS, which provides a framework to describe the vocabulary and structure of RDF data.</li>
+            <li><strong>RDF Example:</strong> We explored how RDF triples can be used to describe relationships in a real-world scenario, demonstrating the flexibility and power of this model.</li>
+            <li><strong>Linked Data:</strong> Understanding how RDF enables linked data, allowing data across different domains to be interconnected and queried seamlessly.</li>
+        </ul>
+
+        <h2>Example</h2>
+        <p>To illustrate the use of RDF triples, we created the following example that represents relationships between different entities:</p>
+        
+        <div class="code-snippet">
+            &lt;Bob&gt; &lt;is a&gt; &lt;person&gt;.<br>
+            &lt;Bob&gt; &lt;is a friend of&gt; &lt;Alice&gt;.<br>
+            &lt;Bob&gt; &lt;is born on&gt; &lt;the 4th of July 1990&gt;.<br>
+            &lt;Bob&gt; &lt;is interested in&gt; &lt;the Mona Lisa&gt;.<br>
+            &lt;the Mona Lisa&gt; &lt;was created by&gt; &lt;Leonardo da Vinci&gt;.<br>
+            &lt;the video 'La Joconde à Washington'&gt; &lt;is about&gt; &lt;the Mona Lisa&gt;.
+        </div>
+        
+        <p>This practical example demonstrates how RDF triples can be used to model relationships, where each triple links two entities through a specific relationship or property. RDF enables the creation of structured, linked data that can be easily shared and queried across the web.</p>
+
+        <h3>Understanding RDF Triple Components</h3>
+        <p>An RDF triple consists of three parts:</p>
+        <ul>
+            <li><strong>Subject:</strong> The entity being described (e.g., <em>Bob</em>).</li>
+            <li><strong>Predicate:</strong> The relationship or property of the subject (e.g., <em>is a friend of</em>).</li>
+            <li><strong>Object:</strong> The entity the subject is related to (e.g., <em>Alice</em>).</li>
+        </ul>
+
+        <h2>Practical </h2>
+        <p>For our practical session, we were tasked with representing relationships using RDF triples in a web development context. Our goal was to model connections between users, media, and content, demonstrating the power of RDF in linking disparate pieces of information.</p>
+
+        <a href="images/RDF example.png" >RDF Example</a>
+
+        <p>This task provided a hands-on approach to understanding how RDF triples can be applied to various web projects, emphasizing the importance of structured, linked data in creating a semantic web.</p>
+    </div>
+
+</body>
+</html>

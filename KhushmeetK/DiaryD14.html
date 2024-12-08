@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14 - SPARQL & Apache Jena Fuseki</title> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7ff;
+        }
+        h1 {
+            text-align: center;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 15px;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-top: 20px;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            color: #34495e;
+            list-style-type: square;
+            font-size: 1.1em;
+        }
+        h3 {
+            color: #e74c3c;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+        .content-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a90e2;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .code-snippet {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #4a90e2;
+            margin: 15px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Day 14 - SPARQL & Apache Jena Fuseki</h1>
+    
+    <div class="content-container">
+        <h2>SPARQL</h2>
+        <p><strong>SPARQL</strong> (SPARQL Protocol and RDF Query Language) is a powerful query language specifically designed for querying and manipulating data stored in the Resource Description Framework (RDF) format. It enables users to extract meaningful information from diverse datasets represented in RDF.</p>
+        
+        <h3>Key Features of SPARQL:</h3>
+        <ul>
+            <li><strong>Data Retrieval:</strong> SPARQL allows users to perform complex queries to retrieve specific data from RDF datasets.</li>
+            <li><strong>Graph Pattern Matching:</strong> It provides graph pattern matching capabilities, enabling users to specify the data structure they want to query.</li>
+            <li><strong>Union and Filters:</strong> Users can combine multiple patterns and apply filters to refine query results.</li>
+            <li><strong>Updating Data:</strong> SPARQL can also be used to update RDF datasets through INSERT, DELETE, and UPDATE operations.</li>
+        </ul>
+
+        <h2>Apache Jena Fuseki</h2>
+        <p><strong>Apache Jena Fuseki</strong> is an open-source server that provides a SPARQL endpoint for RDF data, allowing users to store, query, and update RDF datasets over HTTP. It is a key component of the Apache Jena framework and is widely used for building semantic web applications.</p>
+
+        <h3>Key Features of Apache Jena Fuseki:</h3>
+        <ul>
+            <li><strong>SPARQL Endpoint:</strong> It exposes a SPARQL endpoint where users can send queries and receive results in various formats such as JSON, XML, or CSV.</li>
+            <li><strong>Data Management:</strong> Users can manage RDF datasets, including uploading, querying, and modifying data through a web interface.</li>
+            <li><strong>Integration:</strong> Fuseki integrates seamlessly with other Jena components and can be used alongside RDF libraries and frameworks.</li>
+            <li><strong>Security:</strong> It provides authentication and authorization features for secure data access.</li>
+        </ul>
+
+        <h2>Practical: Installing OpenJDK and Apache Jena Fuseki</h2>
+        <p>In our practical session, we installed <strong>OpenJDK</strong> and <strong>Apache Jena Fuseki</strong> to create an environment for executing SPARQL queries against RDF datasets. Here’s a step-by-step guide on how we achieved this:</p>
+
+        <h3>Step 1: Installing OpenJDK</h3>
+        <p>OpenJDK is an open-source implementation of the Java Platform, which is required to run Apache Jena Fuseki. The installation process involves the following steps:</p>
+        <ul>
+            <li>Visit the <a href="https://openjdk.java.net/install/">OpenJDK Installation Page</a> to download the latest version of OpenJDK.</li>
+            <li>Follow the installation instructions for your operating system (Windows, macOS, or Linux).</li>
+            <li>Verify the installation by opening a terminal (or command prompt) and running the command:</li>
+            <div class="code-snippet">
+                <code>java -version</code>
+            </div>
+            <li>If OpenJDK is installed correctly, it should display the version number.</li>
+        </ul>
+
+        <h3>Step 2: Installing Apache Jena Fuseki</h3>
+        <p>To install Apache Jena Fuseki, follow these steps:</p>
+        <ul>
+            <li>Download the latest version of Apache Jena Fuseki from the <a href="https://jena.apache.org/download/index.cgi">Apache Jena Download Page</a>.</li>
+            <li>Extract the downloaded ZIP or TAR file to a preferred directory.</li>
+            <li>Open a terminal (or command prompt) and navigate to the directory where Fuseki was extracted.</li>
+            <li>Run the following command to start the Fuseki server:</li>
+            <div class="code-snippet">
+                <code>./fuseki-server</code>
+            </div>
+            <li>The Fuseki server will start, and you can access the web interface at <strong>http://localhost:3030</strong>.</li>
+        </ul>
+
+        <h2>Querying RDF Data with SPARQL</h2>
+        <p>Once Apache Jena Fuseki is running, we can load RDF data and start querying it using SPARQL. Here’s a simple example:</p>
+
+        <h3>Example RDF Data:</h3>
+        <div class="code-snippet">
+            <code>
+            @prefix ex: &lt;http://example.org/&gt; .<br>
+            ex:book1 a ex:Book ;<br>
+            ex:title "The Great Gatsby" ;<br>
+            ex:author ex:author1 .<br>
+            ex:author1 a ex:Author ;<br>
+            ex:name "F. Scott Fitzgerald" .
+            </code>
+        </div>
+
+        <h3>SPARQL Query to Retrieve Book Titles:</h3>
+        <div class="code-snippet">
+            <code>
+            SELECT ?title WHERE {<br>
+                ?book a ex:Book ;<br>
+                ex:title ?title .
+            }
+            </code>
+        </div>
+        <p>This query retrieves all titles of books in the RDF dataset. You can run it through the Fuseki web interface by navigating to the "Query" tab after loading the RDF data.</p>
+
+        <h2>Conclusion</h2>
+        <p>In summary, SPARQL is a powerful query language for RDF data, and Apache Jena Fuseki provides an excellent platform for storing and querying RDF datasets. By integrating these tools, we can build semantic web applications that leverage structured data effectively.</p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,283 @@
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+    }
+    
+    .container .navbar {
+    width: 100%;
+    background-color: #ffffff;
+    }
+    
+    .container .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    }
+    
+    .container .navbar ul li {
+    float: left;
+    }
+    
+    .container .navbar ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    .container .navbar ul li a
+    {
+    background-color: #ffffff;
+    }
+    
+    .container .navbar ul li.contact-us a {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 16px;
+    }
+    
+    .contentrow {
+    width: 100%;
+    margin-bottom: 50px;
+    }
+    
+    .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    }
+    
+    .content .text {
+    width: 60%;
+    }
+    
+    .content .text h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+    }
+    
+    .content .text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify; /* Justify text */
+    }
+    
+    .content .text .reserve-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    }
+    
+    .content .image {
+    width: 35%;
+    }
+    
+    .content .image img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    }
+    
+    .memory-section {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    }
+    
+    .memory-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    }
+    
+    .memory-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify; /* Justify text */
+    }
+    
+    .memory-section .travel-logs-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    border-radius: 5px;
+    }
+    
+    .new-section {
+    width: 100%;
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    }
+    
+    .new-section .image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 90%;
+    }
+    
+    .new-section .image-item {
+    width: 30%;
+    text-align: left;
+    }
+    
+    .new-section .image-item img {
+    width: 100%;
+    
+    border-radius: 5px;
+    }
+    
+    .new-section .image-item h2 {
+    font-size: 24px;
+    color: black;
+    margin: 10px 0 5px;
+    }
+    
+    .new-section .image-item p {
+    font-size: 16px;
+    color: black;
+    margin: 5px 0;
+    text-align: justify; /* Justify text */
+    }
+    
+    .center-section {
+    text-align: center;
+    padding: 50px 0;
+    }
+    
+    .center-section img {
+    width: 50px;
+    height: auto;
+    }
+    
+    .center-section h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    }
+    
+    .center-section h2 span {
+    text-decoration: underline;
+    }
+    
+    .center-section p {
+    font-size: 16px;
+    margin: 10px 0;
+    
+    }
+    
+    .below-center-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0;
+    width: 90%;
+    margin: 0 auto;
+    }
+    
+    .below-center-section .left {
+    width: 60%;
+    text-align: left;
+    }
+    
+    .below-center-section .left .large {
+    width: 100%;
+    border-radius: 5px;
+    }
+    
+    .below-center-section .small-image-section {
+    width: 35%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    
+    .below-center-section .small-image-section .small {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    }
+    
+    .below-center-section .small-image-section .text-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+    
+    .below-center-section .small-image-section .text-content h2 {
+    font-size: 24px;
+    text-decoration: underline;
+    width: 45%;
+    }
+    
+    .below-center-section .small-image-section .text-content p {
+    font-size: 16px;
+    width: 50%;
+    text-align: justify; /* Justify text */
+    }
+
+    /* Add this to your existing CSS file */
+    .choose-anywhere-section {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0;
+    box-sizing: border-box;
+    }
+
+    .choose-anywhere-section .text-content {
+    width: 60%;
+    padding: 0 20px;
+    }
+
+    .choose-anywhere-section .text-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    }
+
+    .choose-anywhere-section .text-content h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    }
+
+    .choose-anywhere-section .text-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify; /* Justify text */
+    }
+
+    .choose-anywhere-section .image {
+    width: 35%;
+    padding: 0 20px;
+    }
+
+    .choose-anywhere-section .image img {
+    width: 100%;
+    border-radius: 5px;
+    }

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 20 - Advanced SPARQL and Data Manipulation</title> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7ff;
+        }
+        h1 {
+            text-align: center;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 15px;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-top: 20px;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            color: #34495e;
+            list-style-type: square;
+            font-size: 1.1em;
+        }
+        h3 {
+            color: #e74c3c;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+        .content-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a90e2;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .code-snippet {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #4a90e2;
+            margin: 15px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Day 20 - Advanced SPARQL and Data Manipulation</h1>
+    
+    <div class="content-container">
+        <h2>Advanced SPARQL Concepts</h2>
+        <p><strong>SPARQL</strong> (SPARQL Protocol and RDF Query Language) is a powerful tool used to query and manipulate data stored in Resource Description Framework (RDF) format. Today, we delved deeper into some advanced SPARQL features, which enhance our ability to interact with RDF datasets.</p>
+
+        <h3>Key Features:</h3>
+        <ul>
+            <li><strong>OFFSET:</strong> Allows skipping a specified number of results in a query, useful for pagination.</li>
+            <li><strong>LIMIT:</strong> Restricts the number of results returned by a query.</li>
+            <li><strong>GROUP BY:</strong> Groups results based on one or more variables, useful for aggregating data.</li>
+            <li><strong>HAVING:</strong> Filters groups after aggregation, allowing for more refined queries.</li>
+            <li><strong>WHERE:</strong> Defines the conditions that must be met for the data to be included in the results.</li>
+            <li><strong>SELECT:</strong> Specifies the variables to return in the query results.</li>
+            <li><strong>FILTER:</strong> Applies additional conditions to the data, refining the query results.</li>
+        </ul>
+
+        <h2>Data Manipulation with SPARQL</h2>
+        <p>Data manipulation in SPARQL allows us to update, delete, and insert RDF data dynamically. The core commands used for data manipulation are:</p>
+        <ul>
+            <li><strong>INSERT:</strong> Adds new triples to the dataset.</li>
+            <li><strong>DELETE:</strong> Removes existing triples from the dataset.</li>
+            <li><strong>LOAD:</strong> Loads data from an external source into the dataset.</li>
+            <li><strong>CREATE:</strong> Creates a new graph in the dataset.</li>
+            <li><strong>DROP:</strong> Deletes a specified graph from the dataset.</li>
+        </ul>
+
+        <h2>Practical </h2>
+        <p>In our practical session, we applied SPARQL queries to a dataset related to the <strong>Olympic Games</strong>. The aim was to fetch information such as medal counts, participating countries, and events from the dataset.</p>
+
+        <h3>Example Query: Fetching Medal Counts by Country</h3>
+        <p>The following SPARQL query retrieves the total number of gold, silver, and bronze medals won by each country:</p>
+        <div class="code-snippet">
+            <pre>
+SELECT ?country (SUM(?gold) AS ?totalGold) (SUM(?silver) AS ?totalSilver) (SUM(?bronze) AS ?totalBronze)
+WHERE {
+    ?country a :Country .
+    ?event :hasParticipant ?country .
+    ?event :hasMedal ?medal .
+    ?medal :type ?type .
+    FILTER(?type IN (:Gold, :Silver, :Bronze))
+}
+GROUP BY ?country
+ORDER BY DESC(?totalGold)
+LIMIT 10
+            </pre>
+        </div>
+
+        <p>This query selects the country and sums the medals based on their types. It groups the results by country and orders them to show the top 10 countries with the highest gold medal counts.</p>
+
+        <h3>Example Query: Fetching Events by Year</h3>
+        <p>Another useful query retrieves all events that took place in a specific Olympic year:</p>
+        <div class="code-snippet">
+            <pre>
+SELECT ?event
+WHERE {
+    ?event :heldInYear 2020 .
+}
+            </pre>
+        </div>
+
+        <p>This simple query returns all events that were held during the 2020 Olympic Games.</p>
+
+        <h2>Conclusion</h2>
+        <p>Understanding advanced SPARQL features and data manipulation techniques enables us to interact more effectively with RDF datasets. The practical application with the Olympic Games dataset showcased the potential of SPARQL in real-world scenarios, allowing us to extract meaningful insights from large amounts of data.</p>
+
+        <p>As we move forward, further exploration of SPARQL's capabilities will enhance our data querying skills, paving the way for more complex and insightful data analysis.</p>
+    </div>
+    
+   
+</body>
+</html>

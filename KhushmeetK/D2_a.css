@@ -1,0 +1,79 @@
+.container {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container .header {
+    width: 1170px;
+    height: 250px;
+    background-color: #d87093;
+    position: relative;
+    color: white;
+}
+
+.container .contentrow {
+    width: 1170px;
+    height: auto;
+}
+
+.container .contentrow .content1,
+.container .contentrow .content2,
+.container .contentrow .content3,
+.container .contentrow .content4,
+.container .contentrow .content5 {
+    position: relative; /* Allows positioning of text inside */
+}
+
+.container .header h1,
+.container .contentrow .content1 p,
+.container .contentrow .content2 p,
+.container .contentrow .content3 p,
+.container .contentrow .content4 p,
+.container .contentrow .content5 p {
+    position: absolute;
+    top: 10px;   /* Distance from the top */
+    left: 10px;  /* Distance from the left */
+    margin: 0;   /* Removes extra margin from text */
+}
+
+.container .contentrow .content1 {
+    width: 390px;
+    height: 200px;
+    background-color: #808080;
+    float: left;
+    color: black;
+}
+
+.container .contentrow .content2 {
+    width: 390px;
+    height: 200px;
+    background-color: #00ffff; 
+    float: left;
+    color: black;
+}
+
+.container .contentrow .content3 {
+    width: 390px;
+    height: 200px;
+    background-color: #ffd700;
+    float: left;
+    color: black;
+}
+
+.container .contentrow .content4 {
+    width: 780px; 
+    height: 200px;
+    background-color: #add8e6;
+    float: left;
+    color: black;
+}
+
+.container .contentrow .content5 {
+    width: 390px;
+    height: 200px;
+    background-color: #bc8f8f;
+    float: left;
+    color: black;
+}

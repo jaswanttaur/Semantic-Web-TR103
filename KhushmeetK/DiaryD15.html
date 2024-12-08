@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15 - SPARQL & Apache Jena Fuseki</title> 
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #eaf7ff;
+        }
+        h1 {
+            text-align: center;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 15px;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-top: 20px;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            color: #34495e;
+            list-style-type: square;
+            font-size: 1.1em;
+        }
+        h3 {
+            color: #e74c3c;
+            margin-top: 15px;
+            font-size: 1.5em;
+        }
+        .content-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a90e2;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .code-snippet {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #4a90e2;
+            margin: 15px 0;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap; /* Allows code to wrap */
+        }
+    </style>
+</head>
+<body>
+    <h1>Day 15 - SPARQL & Apache Jena Fuseki</h1>
+    
+    <div class="content-container">
+        <h2>SPARQL: The Query Language for RDF</h2>
+        <p><strong>SPARQL</strong> (SPARQL Protocol and RDF Query Language) is the query language and protocol used to query RDF (Resource Description Framework) data. It enables users to retrieve and manipulate data stored in RDF format, which is essential for semantic web technologies.</p>
+        
+        <h3>Key Features of SPARQL</h3>
+        <ul>
+            <li>Ability to query data from multiple sources.</li>
+            <li>Support for complex queries, including filtering, sorting, and aggregation.</li>
+            <li>Graph pattern matching to retrieve specific data structures.</li>
+        </ul>
+
+        <h3>SPARQL Query Structure</h3>
+        <p>A typical SPARQL query consists of the following components:</p>
+        <ul>
+            <li><strong>SELECT:</strong> Specifies the variables to be returned in the result set.</li>
+            <li><strong>WHERE:</strong> Defines the graph patterns to match data.</li>
+            <li><strong>FILTER:</strong> Applies conditions to restrict the results.</li>
+        </ul>
+
+        
+
+        <h2>Apache Jena Fuseki: A SPARQL Server</h2>
+        <p><strong>Apache Jena Fuseki</strong> is a powerful framework for publishing and managing RDF data and provides a SPARQL endpoint for querying that data. It allows users to create datasets, run queries, and visualize data using a web interface.</p>
+
+        <h3>Setting Up Apache Jena Fuseki</h3>
+        <ol>
+            <li>Download Apache Jena Fuseki from the official website.</li>
+            <li>Extract the downloaded files to a desired location.</li>
+            <li>Navigate to the Fuseki directory and start the server using the following command:</li>
+            <div class="code-snippet">
+                ./fuseki-server
+            </div>
+            <li>Open your web browser and go to <a href="http://localhost:3030">http://localhost:3030</a> to access the Fuseki web interface.</li>
+        </ol>
+
+        <h3>Creating a Dataset</h3>
+        <p>Once you have Fuseki running, you can create a dataset:</p>
+        <ol>
+            <li>In the Fuseki web interface, click on "Add Dataset".</li>
+            <li>Choose a dataset name and select the type (e.g., in-memory).</li>
+            <li>Click "Create" to set up the dataset.</li>
+        </ol>
+
+        <h3>Inserting Data into the Dataset</h3>
+        <p>You can insert RDF data into your dataset using the web interface or SPARQL INSERT queries. Here’s an example of how to insert data using SPARQL:</p>
+        <div class="code-snippet">
+            PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt; <br>
+            PREFIX ex: &lt;http://example.org/&gt; <br>
+            INSERT DATA { <br>
+                ex:HarryPotter a dbo:Book ; <br>
+                dbo:author "J.K. Rowling" ; <br>
+                dbo:published "1997-06-26" . <br>
+            }
+        </div>
+
+        <h3>Running a SPARQL Query</h3>
+        <p>After inserting data, you can run SPARQL queries against your dataset. Use the "Query" tab in the Fuseki interface and enter a query like this:</p>
+        
+
+        <h2>Practical : Library Management System in Fuseki</h2>
+        <p>In our practical session, we implemented a simple library management system ontology in Apache Jena Fuseki. We created classes for <strong>Books</strong>, <strong>Authors</strong>, and <strong>Readers</strong>. The following steps outline our implementation:</p>
+
+        <h3>1. Creating Classes</h3>
+        <p>We defined the following RDF classes:</p>
+        <ul>
+            <li><strong>Book:</strong> Represents each book in the library.</li>
+            <li><strong>Author:</strong> Represents authors of the books.</li>
+            <li><strong>Reader:</strong> Represents library members who borrow books.</li>
+        </ul>
+
+        <h3>2. Defining Relationships</h3>
+        <p>We established relationships using properties, such as:</p>
+        <ul>
+            <li><strong>writes:</strong> Connects an Author to a Book.</li>
+            <li><strong>borrows:</strong> Connects a Reader to a Book.</li>
+        </ul>
+
+        <h3>3. Example Data Insertion</h3>
+        <p>We inserted data into the dataset as follows:</p>
+        <div class="code-snippet">
+            PREFIX ex: &lt;http://example.org/&gt; <br>
+            INSERT DATA { <br>
+                ex:Book1 a ex:Book ; <br>
+                ex:Book1 ex:author "J.K. Rowling" ; <br>
+                ex:Book1 ex:published "1997" . <br>
+                ex:Reader1 a ex:Reader ; <br>
+                ex:Reader1 ex:borrows ex:Book1 . <br>
+            }
+        </div>
+
+        <p>This example demonstrates how to manage and query RDF data using SPARQL and Apache Jena Fuseki. The integration of these technologies simplifies data management and enhances the accessibility of semantic information.</p>
+    </div>
+    
+    
+</body>
+</html>
